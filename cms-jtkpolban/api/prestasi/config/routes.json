@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prestasis",
+      "handler": "prestasi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestasis/count",
+      "handler": "prestasi.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestasis/:id",
+      "handler": "prestasi.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prestasis",
+      "handler": "prestasi.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prestasis/:id",
+      "handler": "prestasi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prestasis/:id",
+      "handler": "prestasi.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

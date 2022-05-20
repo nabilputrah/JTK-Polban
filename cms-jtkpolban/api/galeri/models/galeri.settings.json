@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "galeris",
   "info": {
-    "name": "article",
-    "description": ""
+    "name": "galeri"
   },
   "options": {
     "increments": true,
@@ -16,16 +15,8 @@
       "type": "string",
       "required": true
     },
-    "deskripsi": {
-      "type": "richtext",
-      "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "judul"
-    },
-    "attachment": {
-      "model": "file",
+    "gambar": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "files",
@@ -36,9 +27,13 @@
       "required": true,
       "pluginOptions": {}
     },
+    "keterangan": {
+      "type": "string",
+      "required": true
+    },
     "category": {
       "model": "category",
-      "via": "articles"
+      "via": "galeris"
     }
   }
 }
