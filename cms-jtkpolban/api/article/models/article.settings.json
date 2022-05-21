@@ -37,8 +37,8 @@
       "pluginOptions": {}
     },
     "category": {
-      "model": "category",
-      "via": "articles"
+      "via": "articles",
+      "model": "category"
     }
   }
 }
