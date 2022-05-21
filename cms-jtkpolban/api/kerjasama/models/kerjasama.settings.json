@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "galeri",
+  "collectionName": "kerjasamas",
   "info": {
-    "name": "galeri",
+    "name": "Kerjasama",
     "description": ""
   },
   "options": {
@@ -12,11 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "judul": {
+    "mitra": {
       "type": "string",
       "required": true
     },
-    "gambar": {
+    "deskripsi": {
+      "type": "richtext",
+      "required": true
+    },
+    "attachment": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,14 +31,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "keterangan": {
-      "type": "string",
-      "required": true
-    },
-    "category": {
-      "via": "galeris",
-      "model": "category"
     }
   }
 }

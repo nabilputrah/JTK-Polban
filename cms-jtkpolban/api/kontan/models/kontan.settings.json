@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kontans",
+  "info": {
+    "name": "kontak",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kontak": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

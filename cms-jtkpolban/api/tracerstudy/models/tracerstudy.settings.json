@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracerstudies",
+  "info": {
+    "name": "Tracerstudy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prodi": {
+      "type": "string",
+      "required": true
+    },
+    "angkatan": {
+      "type": "integer",
+      "required": true
+    },
+    "bekerja": {
+      "type": "integer",
+      "required": true
+    },
+    "melanjutkan_study": {
+      "type": "integer"
+    },
+    "wirausaha": {
+      "type": "integer",
+      "required": true
+    },
+    "tidak_bekerja": {
+      "type": "integer",
+      "required": true
+    },
+    "belum_diketahui": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

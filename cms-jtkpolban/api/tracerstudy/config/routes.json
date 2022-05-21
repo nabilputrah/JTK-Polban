@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tracerstudies",
+      "handler": "tracerstudy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tracerstudies/count",
+      "handler": "tracerstudy.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tracerstudies/:id",
+      "handler": "tracerstudy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tracerstudies",
+      "handler": "tracerstudy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tracerstudies/:id",
+      "handler": "tracerstudy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tracerstudies/:id",
+      "handler": "tracerstudy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
