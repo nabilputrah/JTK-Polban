@@ -541,6 +541,29 @@ section {
   color: #106eea;
 }
 
+.section-title h4 {
+  text-align: left;
+  font-size:20px;
+  color: #106eea;
+}
+
+.section-title h5 {
+  text-align: left;
+  color: #F28C2E;
+  font-size:14px;
+}
+.section-title h5.author {
+  text-align: left;
+  color: #105194;
+  font-size:14px;
+}
+
+.section-title h5.readmore {
+  text-align: left;
+  color: #000000;
+  font-size:14px;
+}
+
 .section-title-kerjasama h3 span {
   color: #F28C2E;
 }
