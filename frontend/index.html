@@ -246,7 +246,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img id="berita1_gambar" src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img id="event1_gambar" src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href="#"><i class="bi bi-twitter"></i></a>
                   <a href="#"><i class="bi bi-facebook"></i></a>
@@ -255,10 +255,10 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4 id="berita1_judul">Walter White</h4>
-                <span id="berita1_author">Chief Executive Officer</span>
+                <h4 id="event1_judul">Walter White</h4>
+                <span id="event1_author">Chief Executive Officer</span>
                 <hr>
-                <span id="berita1_desc">Chief Executive Officer</span><br>
+                <span id="event1_desc">Chief Executive Officer</span><br>
                 <span style="float: right;">Read More ...</span>
               </div>
             </div>
@@ -267,7 +267,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img id="berita2_gambar" src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img id="event2_gambar" src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -276,10 +276,10 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4 id="berita2_judul">Walter White</h4>
-                <span id="berita2_author">Chief Executive Officer</span>
+                <h4 id="event2_judul">Walter White</h4>
+                <span id="event2_author">Chief Executive Officer</span>
                 <hr>
-                <span id="berita2_desc">Chief Executive Officer</span><br>
+                <span id="event2_desc">Chief Executive Officer</span><br>
                 <span style="float: right;">Read More ...</span>
               </div>
             </div>
@@ -288,7 +288,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img id="event3_gambar" src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -297,8 +297,11 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4 id="event3_judul">Walter White</h4>
+                <span id="event3_author">Chief Executive Officer</span>
+                <hr>
+                <span id="event3_desc">Chief Executive Officer</span><br>
+                <span style="float: right;">Read More ...</span>
               </div>
             </div>
           </div>
@@ -306,7 +309,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img id="event4_gambar" src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -315,8 +318,11 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4 id="event4_judul">Walter White</h4>
+                <span id="event4_author">Chief Executive Officer</span>
+                <hr>
+                <span id="event4_desc">Chief Executive Officer</span><br>
+                <span style="float: right;">Read More ...</span>
               </div>
             </div>
           </div>
@@ -541,6 +547,10 @@
     berita2();
     berita3();
     berita4();
+    event1();
+    event2();
+    event3();
+    event4();
   }
 
 	async function berita1() {
@@ -689,4 +699,53 @@
       document.getElementById("lainnya3_desc").innerHTML = data.keterangan;
       document.getElementById("lainnya3_img").src = web_strapi + data.gambar[0].url;
   }
+
+  async function event1() {
+      // fetch data
+      let response = await fetch(web_strapi + '/events/628f362509a9cf11c0ac6bf9');
+      let data = await response.json();
+
+      // set data
+      document.getElementById("event1_judul").innerHTML = data.judul_agenda;
+      document.getElementById("event1_author").innerHTML = "Manajemen JTK";
+      document.getElementById("event1_desc").innerHTML = data.preview_text;
+      document.getElementById("event1_gambar").src = web_strapi + data.attachment[0].url;
+  }
+
+  async function event2() {
+      // fetch data
+      let response = await fetch(web_strapi + '/events/628f35e509a9cf11c0ac6bf6');
+      let data = await response.json();
+
+      // set data
+      document.getElementById("event2_judul").innerHTML = data.judul_agenda;
+      document.getElementById("event2_author").innerHTML = "Manajemen JTK";
+      document.getElementById("event2_desc").innerHTML = data.preview_text;
+      document.getElementById("event2_gambar").src = web_strapi + data.attachment[0].url;
+  }
+
+  async function event3() {
+      // fetch data
+      let response = await fetch(web_strapi + '/events/628f2d7d3c9c21038050c590');
+      let data = await response.json();
+
+      // set data
+      document.getElementById("event3_judul").innerHTML = data.judul_agenda;
+      document.getElementById("event3_author").innerHTML = "Manajemen JTK";
+      document.getElementById("event3_desc").innerHTML = data.preview_text;
+      document.getElementById("event3_gambar").src = web_strapi + data.attachment[0].url;
+  }
+
+  async function event4() {
+      // fetch data
+      let response = await fetch(web_strapi + '/events/628f362509a9cf11c0ac6bf9');
+      let data = await response.json();
+
+      // set data
+      document.getElementById("event4_judul").innerHTML = data.judul_agenda;
+      document.getElementById("event4_author").innerHTML = "Manajemen JTK";
+      document.getElementById("event4_desc").innerHTML = data.preview_text;
+      document.getElementById("event4_gambar").src = web_strapi + data.attachment[0].url;
+  }
+
 </script>
