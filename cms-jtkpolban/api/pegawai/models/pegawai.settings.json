@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "pegawais",
   "info": {
-    "name": "pegawai"
+    "name": "pegawai",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "NIP": {
-      "type": "integer",
-      "required": true
-    },
     "nama": {
       "type": "string",
       "required": true
