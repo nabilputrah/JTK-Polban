@@ -545,7 +545,7 @@
 
 	async function berita1() {
 	    // fetch data
-      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
+      let response = await fetch(web_strapi + '/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
 	    let data = await response.json();
 
       // set data
@@ -557,7 +557,7 @@
 
   async function berita2() {
       // fetch data
-      let response = await fetch('http://localhost:1337/articles/obsterik-dari-jtk-sabet-juara-1-hackathon-build-on-indonesia-2020');
+      let response = await fetch(web_strapi + '/articles/obsterik-dari-jtk-sabet-juara-1-hackathon-build-on-indonesia-2020');
       let data = await response.json();
 
       // set data
@@ -569,7 +569,7 @@
 
   async function berita3() {
       // fetch data
-      let response = await fetch('http://localhost:1337/articles/1');
+      let response = await fetch(web_strapi + '/articles/1');
       let data = await response.json();
 
       // set data
@@ -581,7 +581,7 @@
 
   async function berita4() {
       // fetch data
-      let response = await fetch('http://localhost:1337/articles/2');
+      let response = await fetch(web_strapi + '/articles/2');
       let data = await response.json();
 
       // set data
