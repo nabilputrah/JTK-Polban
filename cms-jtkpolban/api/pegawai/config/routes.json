@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pegawais",
+      "handler": "pegawai.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pegawais/count",
+      "handler": "pegawai.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pegawais/:id",
+      "handler": "pegawai.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pegawais",
+      "handler": "pegawai.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pegawais/:id",
+      "handler": "pegawai.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pegawais/:id",
+      "handler": "pegawai.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

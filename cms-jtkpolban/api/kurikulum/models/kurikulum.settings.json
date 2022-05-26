@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kurikulums",
+  "info": {
+    "name": "kurikulum"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kurikulum": {
+      "type": "string",
+      "required": true
+    },
+    "struktur_matkul": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "profil_lulusan": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

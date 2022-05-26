@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pegawais",
+  "info": {
+    "name": "pegawai"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NIP": {
+      "type": "integer",
+      "required": true
+    },
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "tempat_tinggal": {
+      "type": "string",
+      "required": true
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "tempat_tanggal_lahir": {
+      "type": "string",
+      "required": true
+    },
+    "kontak": {
+      "type": "integer",
+      "required": true
+    },
+    "jk": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

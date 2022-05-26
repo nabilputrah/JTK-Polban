@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/matakuliahs",
+      "handler": "matakuliah.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/matakuliahs/count",
+      "handler": "matakuliah.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/matakuliahs/:id",
+      "handler": "matakuliah.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/matakuliahs",
+      "handler": "matakuliah.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/matakuliahs/:id",
+      "handler": "matakuliah.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/matakuliahs/:id",
+      "handler": "matakuliah.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
