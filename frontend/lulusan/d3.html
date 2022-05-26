@@ -119,10 +119,20 @@
       <div class="container">
         <div class="section-title">
           <h2 style="color: orange;">D3 Teknik Informatika</h2>
-          <h2>D4 Teknik Informatika</h2>
+          <a href="d4.html"><h2>D4 Teknik Informatika</h2></a>
         </div>
         <p>
-          Example inner page template
+          <h3>Grafik Tingkat Kelulusan</h3>
+          <h7>Tingkat Kelulusan dari D3 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2019.</h7>
+          <div class="d-flex justify-content-between align-items-center">
+            <div id="plotLulus" class="align-items-center" style="width:100%;max-width:700px"></div>
+          </div>
+          <hr>
+          <h3>Grafik Tracer Study</h3>
+          <h7>Tracer Study dari D3 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2019.</h7>
+          <div class="d-flex justify-content-between align-items-center">
+            <div id="plotTracer" class="align-items-center" style="width:100%;max-width:700px"></div>
+          </div>
         </p>
       </div>
     </section>
@@ -201,9 +211,65 @@
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Plot -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
 </body>
 
 </html>
+
+<script>
+  var web_strapi = "http://localhost:1337";
+
+  window.onload = callFunc();
+
+  function callFunc(){
+    plotLulus();
+    plotTracer();
+  }
+
+  async function plotLulus(){
+    // fetch data
+    let response = await fetch(web_strapi + '/tracerstudies/628f46bb09a9cf11c0ac6bfe');
+    let result = await response.json();
+
+    var xArray = ["Lulus Tepat Waktu", "Lulus Tidak Tepat Waktu", "Tidak Lulus"];
+    var yArray = [parseInt(result.lulus), parseInt(result.lulus_tidaktepat), parseInt(result.tidak_lulus)];
+
+    var data = [{
+      x:xArray,
+      y:yArray,
+      type:"bar",
+      marker: {
+        color: 'red'
+      }
+    }];
+
+    var layout = {};
+
+    Plotly.newPlot("plotLulus", data, layout);
+  }
+
+  async function plotTracer(){
+    // fetch data
+    let response = await fetch(web_strapi + '/tracerstudies/628f46bb09a9cf11c0ac6bfe');
+    let result = await response.json();
+
+    var xArray = ["Bekerja", "Melanjutkan Study", "Wirausaha", "Tidak Bekerja", "Belum Diketahui"];
+    var yArray = [parseInt(result.bekerja), parseInt(result.melanjutkan_study), parseInt(result.wirausaha), parseInt(result.tidak_bekerja), parseInt(result.belum_diketahui)];
+
+    var data = [{
+      x:xArray,
+      y:yArray,
+      type:"bar"
+    }];
+
+    var layout = {};
+
+    Plotly.newPlot("plotTracer", data, layout);
+  }
+  
+</script>

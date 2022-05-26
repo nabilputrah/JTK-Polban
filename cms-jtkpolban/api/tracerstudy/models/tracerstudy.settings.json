@@ -38,6 +38,15 @@
     "belum_diketahui": {
       "type": "integer",
       "required": true
+    },
+    "lulus": {
+      "type": "integer"
+    },
+    "lulus_tidaktepat": {
+      "type": "integer"
+    },
+    "tidak_lulus": {
+      "type": "integer"
     }
   }
 }
