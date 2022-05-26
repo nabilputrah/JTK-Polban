@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stafs",
+  "info": {
+    "name": "staf"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "divisi": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jurusans",
+  "info": {
+    "name": "jurusan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jurusan": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true
+    },
+    "visi": {
+      "type": "text",
+      "required": true
+    },
+    "misi": {
+      "type": "text",
+      "required": true
+    },
+    "ketua": {
+      "type": "string",
+      "required": true
+    },
+    "attachment": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

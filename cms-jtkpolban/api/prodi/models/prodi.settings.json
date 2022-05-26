@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prodis",
+  "info": {
+    "name": "Prodi"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Prodi": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true
+    },
+    "ketua": {
+      "type": "string",
+      "required": true
+    },
+    "misi": {
+      "type": "text",
+      "required": true
+    },
+    "visi": {
+      "type": "text",
+      "required": true
+    },
+    "attachment": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

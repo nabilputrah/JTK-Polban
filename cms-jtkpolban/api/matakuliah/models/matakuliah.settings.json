@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matakuliahs",
+  "info": {
+    "name": "matakuliah"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kode_matkul": {
+      "type": "string",
+      "required": true
+    },
+    "nama_matkul": {
+      "type": "string",
+      "required": true
+    },
+    "sks": {
+      "type": "integer",
+      "required": true
+    },
+    "semester": {
+      "type": "integer",
+      "required": true
+    },
+    "prerequisite": {
+      "type": "richtext",
+      "required": true
+    },
+    "jenis": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
