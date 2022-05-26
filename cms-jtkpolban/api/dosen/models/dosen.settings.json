@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "dosens",
   "info": {
-    "name": "dosen"
+    "name": "dosen",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,25 +12,50 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "NIP": {
+      "type": "string"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "tempat_tinggal": {
+      "type": "text"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tempat_tanggal_lahir": {
+      "type": "string"
+    },
+    "kontak": {
+      "type": "string"
+    },
+    "jk": {
+      "type": "string"
+    },
     "expertise": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "KBK": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "matkul": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "pengalaman": {
-      "type": "text",
-      "required": true
+      "type": "text"
     },
     "karya_ilmiah": {
-      "type": "string",
-      "required": true
+      "type": "text"
     }
   }
 }

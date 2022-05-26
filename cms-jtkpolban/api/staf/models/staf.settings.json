@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "stafs",
   "info": {
-    "name": "staf"
+    "name": "staf",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,9 +12,39 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "divisi": {
+    "NIP": {
       "type": "string",
       "required": true
+    },
+    "nama": {
+      "type": "string"
+    },
+    "tempat_tinggal": {
+      "type": "text"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tempat_tanggal_lahir": {
+      "type": "string"
+    },
+    "kontak": {
+      "type": "string"
+    },
+    "jk": {
+      "type": "string"
+    },
+    "divisi": {
+      "type": "string"
     }
   }
 }
