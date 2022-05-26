@@ -8,13 +8,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+ul.a {
+  list-style-type: none;
+  color: black;
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
 
 a {
-  color: #106eea;
+  color:  #444444;
   text-decoration: none;
 }
 
@@ -528,9 +535,14 @@ section {
   margin: 15px 0 0 0;
   font-size: 32px;
   font-weight: 700;
+
 }
 .section-title h3 span {
   color: #106eea;
+}
+
+.section-title-kerjasama h3 span {
+  color: #F28C2E;
 }
 .section-title p {
   margin: 15px auto 0 auto;
