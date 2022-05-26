@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dosens",
+  "info": {
+    "name": "dosen"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "expertise": {
+      "type": "string",
+      "required": true
+    },
+    "KBK": {
+      "type": "string",
+      "required": true
+    },
+    "matkul": {
+      "type": "string",
+      "required": true
+    },
+    "pengalaman": {
+      "type": "text",
+      "required": true
+    },
+    "karya_ilmiah": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

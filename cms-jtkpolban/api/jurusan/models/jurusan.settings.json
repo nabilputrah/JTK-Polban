@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "jurusans",
   "info": {
-    "name": "article",
-    "description": ""
+    "name": "jurusan"
   },
   "options": {
     "increments": true,
@@ -12,39 +11,37 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "judul": {
+    "jurusan": {
       "type": "string",
       "required": true
     },
     "deskripsi": {
-      "type": "richtext",
+      "type": "text",
       "required": true
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "judul"
+    "visi": {
+      "type": "text",
+      "required": true
+    },
+    "misi": {
+      "type": "text",
+      "required": true
+    },
+    "ketua": {
+      "type": "string",
+      "required": true
     },
     "attachment": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "category": {
-      "via": "articles",
-      "model": "category"
-    },
-    "preview_text": {
-      "type": "string"
-    },
-    "author": {
-      "type": "string"
     }
   }
 }

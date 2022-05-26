@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "pegawais",
   "info": {
-    "name": "article",
-    "description": ""
+    "name": "pegawai"
   },
   "options": {
     "increments": true,
@@ -12,19 +11,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "judul": {
+    "NIP": {
+      "type": "integer",
+      "required": true
+    },
+    "nama": {
       "type": "string",
       "required": true
     },
-    "deskripsi": {
-      "type": "richtext",
+    "tempat_tinggal": {
+      "type": "string",
       "required": true
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "judul"
-    },
-    "attachment": {
+    "foto": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -36,15 +35,17 @@
       "required": true,
       "pluginOptions": {}
     },
-    "category": {
-      "via": "articles",
-      "model": "category"
+    "tempat_tanggal_lahir": {
+      "type": "string",
+      "required": true
     },
-    "preview_text": {
-      "type": "string"
+    "kontak": {
+      "type": "integer",
+      "required": true
     },
-    "author": {
-      "type": "string"
+    "jk": {
+      "type": "string",
+      "required": true
     }
   }
 }

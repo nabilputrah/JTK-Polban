@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "kurikulums",
   "info": {
-    "name": "article",
-    "description": ""
+    "name": "kurikulum"
   },
   "options": {
     "increments": true,
@@ -12,19 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "judul": {
+    "kurikulum": {
       "type": "string",
       "required": true
     },
-    "deskripsi": {
-      "type": "richtext",
-      "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "judul"
-    },
-    "attachment": {
+    "struktur_matkul": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -36,15 +27,9 @@
       "required": true,
       "pluginOptions": {}
     },
-    "category": {
-      "via": "articles",
-      "model": "category"
-    },
-    "preview_text": {
-      "type": "string"
-    },
-    "author": {
-      "type": "string"
+    "profil_lulusan": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
