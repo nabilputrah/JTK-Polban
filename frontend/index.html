@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portal JTK</title>
+  <title>Portal JTK | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -54,17 +53,19 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Portal JTK<span>.</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+      <div class="container d-flex align-items-center">
+        <a href="index.html" class="logo"><img src="assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="index.html">Portal JTK<span>.</span></a></h1>
+      </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang JTK</a></li>
-          <li><a class="nav-link scrollto" href="#services">Akademik</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Mitra</a></li>
-          <li><a class="nav-link scrollto" href="#team">Lulusan</a></li>
+          <li><a class="nav-link active" href="#header">Beranda</a></li>
+          <li><a class="nav-link" href="#">Tentang JTK</a></li>
+          <li><a class="nav-link" href="#">Akademik</a></li>
+          <li><a class="nav-link" href="#">Mitra</a></li>
+          <li><a class="nav-link" href="#">Lulusan</a></li>
           <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Berita</a></li>
@@ -603,7 +604,7 @@
 
   async function gambar_kegiatan1() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f18cb8124b7161cd139c5');
+      let response = await fetch(web_strapi + '/galeris/628f18cb8124b7161cd139c5');
       let data = await response.json();
 
       // set data
@@ -614,7 +615,7 @@
 
   async function gambar_kegiatan2() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f17d68124b7161cd139bd');
+      let response = await fetch(web_strapi + '/galeris/628f17d68124b7161cd139bd');
       let data = await response.json();
 
       // set data
@@ -625,7 +626,7 @@
 
   async function gambar_kegiatan3() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f18828124b7161cd139c2');
+      let response = await fetch(web_strapi + '/galeris/628f18828124b7161cd139c2');
       let data = await response.json();
 
       // set data
@@ -636,7 +637,7 @@
 
   async function gambar_berita1() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f191b8124b7161cd139c9');
+      let response = await fetch(web_strapi + '/galeris/628f191b8124b7161cd139c9');
       let data = await response.json();
 
       // set data
@@ -647,7 +648,7 @@
 
   async function gambar_berita2() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f18fb8124b7161cd139c7');
+      let response = await fetch(web_strapi + '/galeris/628f18fb8124b7161cd139c7');
       let data = await response.json();
 
       // set data
@@ -658,7 +659,7 @@
 
   async function gambar_berita3() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f19818124b7161cd139cb');
+      let response = await fetch(web_strapi + '/galeris/628f19818124b7161cd139cb');
       let data = await response.json();
 
       // set data
@@ -669,7 +670,7 @@
 
   async function gambar_lainnya1() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f1af08124b7161cd139d4');
+      let response = await fetch(web_strapi + '/galeris/628f1af08124b7161cd139d4');
       let data = await response.json();
 
       // set data
@@ -680,7 +681,7 @@
 
   async function gambar_lainnya2() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f1a9b8124b7161cd139ce');
+      let response = await fetch(web_strapi + '/galeris/628f1a9b8124b7161cd139ce');
       let data = await response.json();
 
       // set data
@@ -691,7 +692,7 @@
 
   async function gambar_lainnya3() {
       // fetch data
-      let response = await fetch('http://localhost:1337/galeris/628f1ad28124b7161cd139d1');
+      let response = await fetch(web_strapi + '/galeris/628f1ad28124b7161cd139d1');
       let data = await response.json();
 
       // set data
@@ -738,7 +739,7 @@
 
   async function event4() {
       // fetch data
-      let response = await fetch(web_strapi + '/events/628f362509a9cf11c0ac6bf9');
+      let response = await fetch(web_strapi + '/events/628f367909a9cf11c0ac6bfc');
       let data = await response.json();
 
       // set data
