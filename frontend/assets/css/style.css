@@ -537,6 +537,13 @@ section {
   font-weight: 700;
 
 }
+
+.section-title-form h3 {
+ text-align: left;
+ font-size :20px;
+ color: #105194;
+
+}
 .section-title h3 span {
   color: #106eea;
 }
