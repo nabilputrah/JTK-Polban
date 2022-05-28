@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/event/index",
+      "handler": "event.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/events/count",
       "handler": "event.count",
       "config": {

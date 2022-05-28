@@ -1,8 +1,15 @@
-'use strict';
+const { sanitizeEntity } = require('strapi-utils');
 
-/**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
- * to customize this controller
- */
+module.exports = {
+  /**
+   * Retrieve a record.
+   *
+   * @return {Object}
+   */
 
-module.exports = {};
+  // API Khusus Buat Event
+  async index(){
+    const response = await strapi.services.event.find({ _limit: 4, _sort: 'published_at:desc'});
+    return sanitizeEntity(response, { model: strapi.models.event });
+  },
+};
