@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "matakuliahs",
   "info": {
-    "name": "matakuliah"
+    "name": "matakuliah",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,7 +14,8 @@
   "attributes": {
     "kode_matkul": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "nama_matkul": {
       "type": "string",
@@ -31,9 +33,9 @@
       "type": "richtext",
       "required": true
     },
-    "jenis": {
-      "type": "string",
-      "required": true
+    "kurikulum": {
+      "via": "matakuliahs",
+      "model": "kurikulum"
     }
   }
 }

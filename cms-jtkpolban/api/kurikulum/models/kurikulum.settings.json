@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "kurikulums",
   "info": {
-    "name": "kurikulum"
+    "name": "kurikulum",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,25 +12,30 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "kurikulum": {
-      "type": "string",
-      "required": true
-    },
-    "struktur_matkul": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
     "profil_lulusan": {
       "type": "richtext",
       "required": true
+    },
+    "tahun": {
+      "type": "integer",
+      "required": true
+    },
+    "prodi": {
+      "type": "enumeration",
+      "enum": [
+        "D4",
+        "D3"
+      ],
+      "required": true
+    },
+    "matakuliahs": {
+      "via": "kurikulum",
+      "collection": "matakuliah"
+    },
+    "kode": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
