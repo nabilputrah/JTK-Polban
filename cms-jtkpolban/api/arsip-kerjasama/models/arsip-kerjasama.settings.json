@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "kerjasamas",
+  "collectionName": "arsip_kerjasama",
   "info": {
-    "name": "Kerjasama",
+    "name": "Arsip Kerjasama",
     "description": ""
   },
   "options": {
@@ -12,13 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nama_mitra": {
+    "judul": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
-    "pesan": {
+    "deskripsi": {
       "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "judul",
       "required": true
     },
     "attachment": {
@@ -33,12 +37,7 @@
       "required": true,
       "pluginOptions": {}
     },
-    "email": {
-      "type": "email",
-      "required": true,
-      "unique": false
-    },
-    "no_telp": {
+    "author": {
       "type": "string",
       "required": true
     }
