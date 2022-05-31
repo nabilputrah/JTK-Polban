@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/arsipkerjasamas",
+      "handler": "arsipkerjasama.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arsipkerjasamas/index",
+      "handler": "arsipkerjasama.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arsipkerjasamas/count",
+      "handler": "arsipkerjasama.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arsipkerjasamas/:id",
+      "handler": "arsipkerjasama.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/arsipkerjasamas",
+      "handler": "arsipkerjasama.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/arsipkerjasamas/:id",
+      "handler": "arsipkerjasama.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/arsipkerjasamas/:id",
+      "handler": "arsipkerjasama.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

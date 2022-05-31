@@ -40,6 +40,10 @@
       "type": "uid",
       "targetField": "judul",
       "required": true
+    },
+    "Author": {
+      "type": "string",
+      "required": true
     }
   }
 }

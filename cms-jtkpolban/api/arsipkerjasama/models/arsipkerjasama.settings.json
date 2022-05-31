@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "arsip_kerjasama",
+  "collectionName": "arsipkerjasama",
   "info": {
-    "name": "Arsip Kerjasama",
+    "name": "Arsipkerjasama",
     "description": ""
   },
   "options": {
@@ -38,8 +38,7 @@
       "pluginOptions": {}
     },
     "author": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }
