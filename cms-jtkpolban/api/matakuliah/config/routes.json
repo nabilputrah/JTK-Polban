@@ -10,6 +10,22 @@
     },
     {
       "method": "GET",
+      "path": "/matakuliahs/indexd316",
+      "handler": "matakuliah.indexD316",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/matakuliahs/indexd416",
+      "handler": "matakuliah.indexD416",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/matakuliahs/count",
       "handler": "matakuliah.count",
       "config": {

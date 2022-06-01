@@ -23,6 +23,8 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -124,16 +126,24 @@
                           <hr align="left">
                           <div class="mu-latest-course-single-content">
                             <h3>Profil Lulusan</h3>
-                            <ol>
-                              <li>Senior Programmer : Senior programmer menulis program perangkat lunak. Ia mentransformasikan rancangan program yang dibuat oleh software designers/engineers/system analyst menjadi instruksi-instruksi yang dapat dikerjakan oleh komputer.</li>
-                              <li>Software Developer : Software developer mengembangkan aplikasi-aplikasi yang memungkinkan orang untuk menjalankan tugas-tugas spesifik pada komputer atau perangkat lain.</li>
-                              <li>Database Administrator : Database administrator (DBA) menyimpan dan mengorganisasikan data dengan menggunakan perangkat lunak khusus seperti DBMS dan lainnya. Ia memastikan bahwa data tersedia dan aman/terlindungi dari akses oleh pihak-pihak yang tidak berhak.</li>
-                              <li>Web Developer : Web developer merancang dan membuat websites. Ia bertanggung jawab terhadap rupa (looks and feels) dari website. Ia juga bertanggung jawab terhadap aspek-aspek teknis website, seperti performansi dan kapasitas, yang merupakan ukuran dari website’s speed dan sejauh mana website dapat menangani traffic. Ia juga dimungkinkan untuk membuat konten dari website.</li>
-                              <li>Multimedia Developer : Multimedia developer adalah profesional pengembangan multimedia yang menggabungkan desain dan pengetahuan teknis untuk penelitian, menganalisis, mengevaluasi, desain, memrogram, dan memodifikasi aplikasi yang menggabungkan teks, grafik, animasi, pencitraan, audio-video display, dan media interaktif lainnya</li>
-                              <li>Information Systems Analyst : Information Systems Analyst mempelajari sistem-sistem berbasis TIK beserta prosedur-prosedurnya dan merancang solusi-solusi sistem informasi untuk membantu organisasi agar dapat beroperasi dengan lebih efisien dan efektif. Ia menerapkan TIK pada proses bisnis organisasi dengan cara memahami kebutuhan dan batasan keduanya (TIK dan bisnis).</li>
-                              <li>Computer Support Specialist : Computer support specialist menyediakan bantuan dan advis kepada orang-orang dan organisasi-organisasi tentang bagaimana menggunakan perangkat lunak dan perlengkapan komputer. Sebutan lain: computer network support specialists, support information technology (IT) staff, dan computer user support specialists.</li>
-                            </ol>
+                            <p id="profil_lulusan" style="text-indent: 0px; text-align: justify">
+                              profil lulusan
+                            </p>
                             <h3>Struktur Mata Kuliah Per Semester </h3>
+                            <div class="row" style="font-size: 13px; display: block; margin: 0 auto;background-color: #FFF;">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive" width="100%">
+                                  <thead>
+                                      <tr>
+                                        <th class="text-center" style="width: 10px;">NIP</th>
+                                        <th class="text-center">Nama Matakuliah</th>
+                                        <th class="text-center">Semester</th>
+                                        <th class="text-center">SKS</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  </tbody>
+                              </table>
+                            </div>                      
                           </div>
                         </div> 
                       </div>                                   
@@ -239,6 +249,9 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -247,17 +260,57 @@
 
 </html>
 
-<!-- <script type="text/javascript">
-  berita();
+<script>
+  var web_strapi = "https://portaljtk.herokuapp.com";
+  var id = "629715ced4d62d0898c78fb4";
 
-	async function berita() {
-	    // fetch data
-      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
-	    let data = await response.json();
-	    console.log(data.judul);
+  window.onload = callAllFunc();
 
+  function callAllFunc(){
+    kurikulum();
+  }
+
+  function formatMyDate(value, locale = 'en-GB') {
+    return new Date(value).toLocaleDateString(locale);
+  }
+
+  async function kurikulum() {
+      // fetch data
+      let response = await fetch(web_strapi + '/kurikulums/' + id);
+      let data = await response.json();
+      // console.log(data);
       // set data
-      document.getElementById("judul_utama").innerHTML = data.judul;
-      document.getElementById("slug_berita").innerHTML = data.slug;
-	}
-</script> -->
+      const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
+      
+      let deskripsi = JSON.stringify(data.profil_lulusan);
+      let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
+      let result = deskripsi_replace.replace(/\“|\"/gi,'');
+      document.getElementById("profil_lulusan").innerHTML = result ;    
+  }
+
+  $(document).ready(function (){
+    $('#bimz').DataTable({
+      processing: true,
+      "ajax": {
+        "url": web_strapi + "/matakuliahs/indexd416",
+        dataSrc:"",
+        cache: true
+      },
+      "columns": [
+        { "data": "kode_matkul" },
+        { "data": "nama_matkul" },
+        { "data": "semester",
+          render: function (data, type, row, meta) {
+            return '<div class="text-center">'+data+'</div>';
+          }
+        },
+        { "data": "sks",
+          render: function (data, type, row, meta) {
+            return '<div class="text-center">'+data+'</div>';
+          }
+        }
+      ]
+    });
+  });
+
+</script>

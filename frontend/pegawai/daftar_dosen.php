@@ -257,7 +257,6 @@
 
 <script>
 var web_strapi = "https://portaljtk.herokuapp.com";
-
 $(document).ready(function (){
   $('#bimz').DataTable({
     processing: true,

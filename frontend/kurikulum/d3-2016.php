@@ -130,13 +130,13 @@
                             </p>
                             <h3>Struktur Mata Kuliah Per Semester </h3>
                             <div class="row" style="font-size: 13px; display: block; margin: 0 auto;background-color: #FFF;">
-                              <table id="bimz" class="table table-striped table-bordered table-responsive">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive" width="100%">
                                   <thead>
                                       <tr>
                                         <th class="text-center" style="width: 10px;">NIP</th>
-                                        <th class="text-center">Nama</th>
-                                        <th class="text-center">Foto</th>
-                                        <th class="text-center">Action</th>
+                                        <th class="text-center">Nama Matakuliah</th>
+                                        <th class="text-center">Semester</th>
+                                        <th class="text-center">SKS</th>
                                       </tr>
                                   </thead>
                                   <tbody>
@@ -283,7 +283,7 @@
       // fetch data
       let response = await fetch(web_strapi + '/kurikulums/' + id);
       let data = await response.json();
-      console.log(data);
+      // console.log(data);
       // set data
       const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
       
@@ -297,21 +297,21 @@
     $('#bimz').DataTable({
       processing: true,
       "ajax": {
-        "url": web_strapi + "/dosens",
+        "url": web_strapi + "/matakuliahs/indexd316",
         dataSrc:"",
         cache: true
       },
       "columns": [
-        { "data": "NIP" },
-        { "data": "nama" },
-        { "data": "foto.formats.thumbnail.url",
+        { "data": "kode_matkul" },
+        { "data": "nama_matkul" },
+        { "data": "semester",
           render: function (data, type, row, meta) {
-            return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
+            return '<div class="text-center">'+data+'</div>';
           }
         },
-        { "data": "id",
+        { "data": "sks",
           render: function (data, type, row, meta) {
-            return '<div class="text-center"><a href=dosen_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
+            return '<div class="text-center">'+data+'</div>';
           }
         }
       ]
