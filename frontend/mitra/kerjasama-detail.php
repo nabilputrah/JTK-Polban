@@ -135,9 +135,12 @@
             </div>
             <div class="portfolio-description">
               <h2 id="kerjasama_judul">aaa</h2>
+              
               <p id="kerjasama_text" style="text-align: justify;">
                 aaa
               </p>
+              
+              
             </div>
           </div>
           <div class="col-lg-4">
@@ -258,13 +261,16 @@
       let data = await response.json();
       console.log(data);
       // set data
+      const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
+      
       document.getElementById("kerjasama_judul").innerHTML = data.judul;
       document.getElementById("ks_title").innerHTML = data.judul;
       document.getElementById("author").innerHTML = "Author : " + data.author;
       document.getElementById("kerjasama_img").src = web_strapi + data.attachment[0].url;
-      console.log(data.attachment.url);
-      document.getElementById("kerjasama_text").innerHTML = data.deskripsi;    
+      let deskripsi = JSON.stringify(data.deskripsi);
+      document.getElementById("kerjasama_text").innerHTML = deskripsi.replace(regex, '<br>') ;    
       document.getElementById("published").innerHTML = "Published : " + formatMyDate(data.published_at);
   }
 
+  
 </script>
