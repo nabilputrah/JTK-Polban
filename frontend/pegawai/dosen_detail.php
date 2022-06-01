@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dosen | Politeknik Negeri Bandung</title>
+  <title>Detail Dosen | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,7 +22,6 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -82,8 +81,8 @@
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="daftar_dosen.html">Dosen</a></li>
+                  <li><a href="daftar_pegawai.html">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -98,7 +97,7 @@
   <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspDosen</span></h1>
+      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Dosen</span></h1>
     </div>
   </section><!-- End Slider -->
 
@@ -109,48 +108,121 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Daftar Dosen</h2>
+          <h2>Detail Dosen</h2>
           <ol>
             <li><a href="index.html">Beranda</a></li>
+            <li>Pegawai</li>
             <li>Dosen</li>
+            <li id="bc_title">:title</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
-  <!-- ======= List Section ======= -->
-  <section id="mu-course-content">
-    <div class="container" data-aos="fade-up">
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-md-12">
-          <div class="mu-course-content-area">
-            <div class="row">
-              <div class="section-title">
-                <h2 style="color: orange;">Dosen</h2>
-                <a href="#"><h2>Lainnya</h2></a>
+    <!-- ======= Profil Section ======= -->
+    <section id="mu-course-content">
+      <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12">
+            <div class="mu-course-content-area">
+              <div class="row">
+                  <div class="col-md-3">
+                    <!-- start sidebar -->
+                    <aside class="mu-sidebar">
+                      <!-- start single sidebar -->
+                      <div class="mu-single-sidebar">
+                        <h3>Profil Dosen</h3>
+                        <hr align="left" style="width: 100%;">
+                        <img id="dosen_img" src="../assets/img/avatar.png" alt="Avatar">
+                      </div>
+                      <!-- end single sidebar -->                  
+                    </aside>
+                    <!-- / end sidebar -->
+                  </div>
+
+                  <div class="col-md-9">
+                    <!-- start course content container -->
+                    <div class="mu-course-container mu-course-details">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="mu-latest-course-single">
+                            <div class="mu-latest-course-single-content">
+                              <br>
+                              <br>
+                              <br>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">NIP</td>
+                                    <td>:</td>
+                                    <td id="dosen_nip">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Nama Lengkap</td>
+                                    <td>:</td>
+                                    <td id="dosen_nama">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Tempat, tanggal lahir</td>
+                                    <td>:</td>
+                                    <td id="dosen_lahir">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">No Telepon</td>
+                                    <td>:</td>
+                                    <td id="dosen_kontak">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Alamat</td>
+                                    <td>:</td>
+                                    <td id="dosen_tinggal">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Jenis Kelamin</td>
+                                    <td>:</td>
+                                    <td  id="dosen_jk">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">KBK</td>
+                                    <td>:</td>
+                                    <td  id="dosen_kbk">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Expertise</td>
+                                    <td>:</td>
+                                    <td  id="dosen_expertise">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Mata Kuliah yang diampu</td>
+                                    <td>:</td>
+                                    <td  id="dosen_matkul">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Pengalaman</td>
+                                    <td>:</td>
+                                    <td  id="dosen_pengalaman">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Daftar Publikasi Penelitian/Karya Ilmiah</td>
+                                    <td>:</td>
+                                    <td  id="dosen_karya">191524052</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div> 
+                        </div>                                   
+                      </div>
+                    </div>
+                    <!-- end course content container -->
+                  </div>
               </div>
-              <!-- start course content container -->
-              <div class="mu-course-container mu-course-details">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="mu-latest-course-single">
-                      <h2><a href="#">Daftar Pengajar (Dosen)</a></h2>
-                      <hr align="left">
-                      <div class="mu-latest-course-single-content">
-                        <table id="example" class="display" width="100%"></table>                      </div>
-                    </div> 
-                  </div>                                   
-                </div>
-              </div>
-              <!-- end course content container -->
             </div>
-          </div>
-        </div>  
+          </div>  
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- End List Section -->
+    </section>
+    <!-- End Profil Section -->
 
   </main><!-- End #main -->
 
@@ -225,8 +297,6 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -235,81 +305,42 @@
 
 </html>
 
-<script>
+<script type="text/javascript">
+  var web_strapi = "http://localhost:1337";
+  var id = "<?php echo $_GET['id']; ?>";
 
-var dataSet = [
-    ['Tiger Nixon', 'System Architect', 'Edinburgh', '5421', '2011/04/25', '$320,800'],
-    ['Garrett Winters', 'Accountant', 'Tokyo', '8422', '2011/07/25', '$170,750'],
-    ['Ashton Cox', 'Junior Technical Author', 'San Francisco', '1562', '2009/01/12', '$86,000'],
-    ['Cedric Kelly', 'Senior Javascript Developer', 'Edinburgh', '6224', '2012/03/29', '$433,060'],
-    ['Airi Satou', 'Accountant', 'Tokyo', '5407', '2008/11/28', '$162,700'],
-    ['Brielle Williamson', 'Integration Specialist', 'New York', '4804', '2012/12/02', '$372,000'],
-    ['Herrod Chandler', 'Sales Assistant', 'San Francisco', '9608', '2012/08/06', '$137,500'],
-    ['Rhona Davidson', 'Integration Specialist', 'Tokyo', '6200', '2010/10/14', '$327,900'],
-    ['Colleen Hurst', 'Javascript Developer', 'San Francisco', '2360', '2009/09/15', '$205,500'],
-    ['Sonya Frost', 'Software Engineer', 'Edinburgh', '1667', '2008/12/13', '$103,600'],
-    ['Jena Gaines', 'Office Manager', 'London', '3814', '2008/12/19', '$90,560'],
-    ['Quinn Flynn', 'Support Lead', 'Edinburgh', '9497', '2013/03/03', '$342,000'],
-    ['Charde Marshall', 'Regional Director', 'San Francisco', '6741', '2008/10/16', '$470,600'],
-    ['Haley Kennedy', 'Senior Marketing Designer', 'London', '3597', '2012/12/18', '$313,500'],
-    ['Tatyana Fitzpatrick', 'Regional Director', 'London', '1965', '2010/03/17', '$385,750'],
-    ['Michael Silva', 'Marketing Designer', 'London', '1581', '2012/11/27', '$198,500'],
-    ['Paul Byrd', 'Chief Financial Officer (CFO)', 'New York', '3059', '2010/06/09', '$725,000'],
-    ['Gloria Little', 'Systems Administrator', 'New York', '1721', '2009/04/10', '$237,500'],
-    ['Bradley Greer', 'Software Engineer', 'London', '2558', '2012/10/13', '$132,000'],
-    ['Dai Rios', 'Personnel Lead', 'Edinburgh', '2290', '2012/09/26', '$217,500'],
-    ['Jenette Caldwell', 'Development Lead', 'New York', '1937', '2011/09/03', '$345,000'],
-    ['Yuri Berry', 'Chief Marketing Officer (CMO)', 'New York', '6154', '2009/06/25', '$675,000'],
-    ['Caesar Vance', 'Pre-Sales Support', 'New York', '8330', '2011/12/12', '$106,450'],
-    ['Doris Wilder', 'Sales Assistant', 'Sydney', '3023', '2010/09/20', '$85,600'],
-    ['Angelica Ramos', 'Chief Executive Officer (CEO)', 'London', '5797', '2009/10/09', '$1,200,000'],
-    ['Gavin Joyce', 'Developer', 'Edinburgh', '8822', '2010/12/22', '$92,575'],
-    ['Jennifer Chang', 'Regional Director', 'Singapore', '9239', '2010/11/14', '$357,650'],
-    ['Brenden Wagner', 'Software Engineer', 'San Francisco', '1314', '2011/06/07', '$206,850'],
-    ['Fiona Green', 'Chief Operating Officer (COO)', 'San Francisco', '2947', '2010/03/11', '$850,000'],
-    ['Shou Itou', 'Regional Marketing', 'Tokyo', '8899', '2011/08/14', '$163,000'],
-    ['Michelle House', 'Integration Specialist', 'Sydney', '2769', '2011/06/02', '$95,400'],
-    ['Suki Burks', 'Developer', 'London', '6832', '2009/10/22', '$114,500'],
-    ['Prescott Bartlett', 'Technical Author', 'London', '3606', '2011/05/07', '$145,000'],
-    ['Gavin Cortez', 'Team Leader', 'San Francisco', '2860', '2008/10/26', '$235,500'],
-    ['Martena Mccray', 'Post-Sales support', 'Edinburgh', '8240', '2011/03/09', '$324,050'],
-    ['Unity Butler', 'Marketing Designer', 'San Francisco', '5384', '2009/12/09', '$85,675'],
-];
- 
-var web_strapi = "http://localhost:1337";
 
-window.onload = callAllFunc();
-data;
+  window.onload = callAllFunc();
 
-function callAllFunc(){
-  arsip_kerjasama();
-}
-function formatMyDate(value, locale = 'en-GB') {
-  return new Date(value).toLocaleDateString(locale);
-}
-async function arsip_kerjasama() {
-    // fetch data
-    let response = await fetch(web_strapi + '/dosens');
-    data = await response.json();
-    var i = 1;
+  function callAllFunc(){
+    dosen();
+  }
 
-    // set data
-    for (i; i <= 4; i++) {
+  function formatMyDate(value, locale = 'en-GB') {
+    return new Date(value).toLocaleDateString(locale);
+  }
+
+  async function dosen() {
+      // fetch data
+      let response = await fetch(web_strapi + '/dosens/' + id);
+      let data = await response.json();
+
+      // set data
+      document.getElementById("dosen_img").src = web_strapi + data.foto.url;
+      document.getElementById("dosen_nip").innerHTML = data.NIP;
+      document.getElementById("dosen_nama").innerHTML = data.nama;
+      document.getElementById("bc_title").innerHTML = data.nama;
+      document.getElementById("dosen_tinggal").innerHTML = data.tempat_tinggal;
+      document.getElementById("dosen_lahir").innerHTML = data.tempat_tanggal_lahir;
+      document.getElementById("dosen_kontak").innerHTML = data.kontak;
+      document.getElementById("dosen_jk").innerHTML = data.jk;
+      document.getElementById("dosen_karya").innerHTML = data.karya_ilmiah;
+      document.getElementById("dosen_pengalaman").innerHTML = data.pengalaman;
+      document.getElementById("dosen_matkul").innerHTML = data.matkul;
+      document.getElementById("dosen_kbk").innerHTML = data.KBK;
+      document.getElementById("dosen_expertise").innerHTML = data.expertise;
+
       console.log(data);
-      document.getElementById("Dosen"+ i +"_NIP").innerHTML = data[i-1].NIP;
-      document.getElementById("Dosen"+ i +"_nama").innerHTML = data[i-1].nama;
-      document.getElementById("Dosen"+ i +"_img").src = web_strapi + data[i-1].foto.url;      
-     }
-}
-
-$(document).ready(function () {
-    $('#example').DataTable({
-        columns: [
-            { title: 'Name' },
-            { title: 'Position' },
-            { title: 'Office' },
-        ],
-    });
-});
+  }
 
 </script>
