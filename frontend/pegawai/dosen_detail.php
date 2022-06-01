@@ -325,6 +325,7 @@
       let response = await fetch(web_strapi + '/dosens/' + id);
       let data = await response.json();
 
+      const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
       // set data
       document.getElementById("dosen_img").src = web_strapi + data.foto.url;
       document.getElementById("dosen_nip").innerHTML = data.NIP;
@@ -334,8 +335,13 @@
       document.getElementById("dosen_lahir").innerHTML = data.tempat_tanggal_lahir;
       document.getElementById("dosen_kontak").innerHTML = data.kontak;
       document.getElementById("dosen_jk").innerHTML = data.jk;
-      document.getElementById("dosen_karya").innerHTML = data.karya_ilmiah;
-      document.getElementById("dosen_pengalaman").innerHTML = data.pengalaman;
+      // document.getElementById("dosen_karya").innerHTML = data.karya_ilmiah;
+      let karya = JSON.stringify(data.karya_ilmiah);
+      document.getElementById("dosen_karya").innerHTML = karya.replace(regex, '<br>');
+
+      let deskripsi = JSON.stringify(data.pengalaman);
+      document.getElementById("dosen_pengalaman").innerHTML = deskripsi.replace(regex, '<br>');
+
       document.getElementById("dosen_matkul").innerHTML = data.matkul;
       document.getElementById("dosen_kbk").innerHTML = data.KBK;
       document.getElementById("dosen_expertise").innerHTML = data.expertise;
