@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dosen | Politeknik Negeri Bandung</title>
+  <title>Detail Dosen | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,7 +22,6 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -82,8 +81,8 @@
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="daftar_dosen.html">Dosen</a></li>
+                  <li><a href="daftar_pegawai.html">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -98,7 +97,7 @@
   <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspDosen</span></h1>
+      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Dosen</span></h1>
     </div>
   </section><!-- End Slider -->
 
@@ -109,65 +108,121 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Daftar Dosen</h2>
+          <h2>Detail Dosen</h2>
           <ol>
             <li><a href="index.html">Beranda</a></li>
+            <li>Pegawai</li>
             <li>Dosen</li>
+            <li id="bc_title">:title</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
-  <!-- ======= List Section ======= -->
-  <section id="mu-course-content">
-    <div class="container" data-aos="fade-up">
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-md-12">
-          <div class="mu-course-content-area">
-            <div class="row">
-              <div class="section-title">
-                <h2 style="color: orange;">Dosen</h2>
-                <a href="#"><h2>Lainnya</h2></a>
-              </div>
-              <!-- start course content container -->
-              <div class="mu-course-container mu-course-details">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="mu-latest-course-single">
-                      <h2><a href="#">Daftar Pengajar (Dosen)</a></h2>
-                      <hr align="left">
-                      <div class="mu-latest-course-single-content">
-                        <div class="row" style="font-size: 13px">
-                              <table id="bimz" class="table table-striped table-bordered">
-                                  <thead>
-                                      <tr>
-                                        <th style="width: 8px">No</th>
-                                          <th>Kategori</th>
-                                          <th>Author</th>
-                                          <th>Komentar</th>
-                                          <th>Like</th>
-                                          <th>Action</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                    
-                                  </tbody>
-                              </table>
-                        </div>                      
+    <!-- ======= Profil Section ======= -->
+    <section id="mu-course-content">
+      <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12">
+            <div class="mu-course-content-area">
+              <div class="row">
+                  <div class="col-md-3">
+                    <!-- start sidebar -->
+                    <aside class="mu-sidebar">
+                      <!-- start single sidebar -->
+                      <div class="mu-single-sidebar">
+                        <h3>Profil Dosen</h3>
+                        <hr align="left" style="width: 100%;">
+                        <img id="dosen_img" src="../assets/img/avatar.png" alt="Avatar">
                       </div>
-                    </div> 
-                  </div>                                   
-                </div>
+                      <!-- end single sidebar -->                  
+                    </aside>
+                    <!-- / end sidebar -->
+                  </div>
+
+                  <div class="col-md-9">
+                    <!-- start course content container -->
+                    <div class="mu-course-container mu-course-details">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="mu-latest-course-single">
+                            <div class="mu-latest-course-single-content">
+                              <br>
+                              <br>
+                              <br>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">NIP</td>
+                                    <td>:</td>
+                                    <td id="dosen_nip">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Nama Lengkap</td>
+                                    <td>:</td>
+                                    <td id="dosen_nama">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Tempat, tanggal lahir</td>
+                                    <td>:</td>
+                                    <td id="dosen_lahir">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">No Telepon</td>
+                                    <td>:</td>
+                                    <td id="dosen_kontak">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Alamat</td>
+                                    <td>:</td>
+                                    <td id="dosen_tinggal">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Jenis Kelamin</td>
+                                    <td>:</td>
+                                    <td  id="dosen_jk">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">KBK</td>
+                                    <td>:</td>
+                                    <td  id="dosen_kbk">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Expertise</td>
+                                    <td>:</td>
+                                    <td  id="dosen_expertise">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Mata Kuliah yang diampu</td>
+                                    <td>:</td>
+                                    <td  id="dosen_matkul">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Pengalaman</td>
+                                    <td>:</td>
+                                    <td  id="dosen_pengalaman">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Daftar Publikasi Penelitian/Karya Ilmiah</td>
+                                    <td>:</td>
+                                    <td  id="dosen_karya">191524052</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div> 
+                        </div>                                   
+                      </div>
+                    </div>
+                    <!-- end course content container -->
+                  </div>
               </div>
-              <!-- end course content container -->
             </div>
-          </div>
-        </div>  
+          </div>  
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- End List Section -->
+    </section>
+    <!-- End Profil Section -->
 
   </main><!-- End #main -->
 
@@ -242,8 +297,6 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -252,31 +305,42 @@
 
 </html>
 
-<script>
-var web_strapi = "http://localhost:1337";
+<script type="text/javascript">
+  var web_strapi = "http://localhost:1337";
+  var id = "<?php echo $_GET['id']; ?>";
 
-$(document).ready(function (){
-  $('#bimz').DataTable({
-    processing: true,
-    "ajax": {
-      "url": web_strapi + "/dosens",
-      dataSrc:"",
-      cache: true
-    },
-    "fnRowCallback": function(nRow,aData,iDisplayIndex,iDisplayIndexFull) {
-      var index = iDisplayIndex + 1;
-      $('td:eq(0)',nRow).html(index);
-      return nRow;
-    },
-    "columns": [
-      { "data": "NIP" },
-      { "data": "nama" },
-      { "data": "kontak" },
-      { "data": "matkul" },
-      { "data": "pengalaman" },
-      { "data": "pengalaman" }
-    ]
-  });
-});
+
+  window.onload = callAllFunc();
+
+  function callAllFunc(){
+    dosen();
+  }
+
+  function formatMyDate(value, locale = 'en-GB') {
+    return new Date(value).toLocaleDateString(locale);
+  }
+
+  async function dosen() {
+      // fetch data
+      let response = await fetch(web_strapi + '/dosens/' + id);
+      let data = await response.json();
+
+      // set data
+      document.getElementById("dosen_img").src = web_strapi + data.foto.url;
+      document.getElementById("dosen_nip").innerHTML = data.NIP;
+      document.getElementById("dosen_nama").innerHTML = data.nama;
+      document.getElementById("bc_title").innerHTML = data.nama;
+      document.getElementById("dosen_tinggal").innerHTML = data.tempat_tinggal;
+      document.getElementById("dosen_lahir").innerHTML = data.tempat_tanggal_lahir;
+      document.getElementById("dosen_kontak").innerHTML = data.kontak;
+      document.getElementById("dosen_jk").innerHTML = data.jk;
+      document.getElementById("dosen_karya").innerHTML = data.karya_ilmiah;
+      document.getElementById("dosen_pengalaman").innerHTML = data.pengalaman;
+      document.getElementById("dosen_matkul").innerHTML = data.matkul;
+      document.getElementById("dosen_kbk").innerHTML = data.KBK;
+      document.getElementById("dosen_expertise").innerHTML = data.expertise;
+
+      console.log(data);
+  }
 
 </script>

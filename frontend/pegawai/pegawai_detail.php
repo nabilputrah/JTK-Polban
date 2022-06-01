@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detail Dosen | Politeknik Negeri Bandung</title>
+  <title>Detail Pegawai | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -67,7 +66,7 @@
           <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
           <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
           <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
-          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="../berita/berita_home.html">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
@@ -82,8 +81,8 @@
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="daftar_dosen.html">Dosen</a></li>
+                  <li><a href="daftar_pegawai.html">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -95,121 +94,120 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <!-- ======= Slider Section ======= -->
+  <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Profil<span>&nbspDosen</span></h1>
+      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Pegawai</span></h1>
     </div>
-  </section><!-- End Hero -->
- 
-  <!-- ======= Profil Section ======= -->
-  <section id="mu-course-content">
-    <div class="container" data-aos="fade-up">
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-md-12">
-          <div class="mu-course-content-area">
-            <div class="row">
-                <div class="col-md-3">
-                  <!-- start sidebar -->
-                  <aside class="mu-sidebar">
-                    <!-- start single sidebar -->
-                    <div class="mu-single-sidebar">
-                      <h3>Profil Dosen</h3>
-                      <hr align="left" style="width: 100%;">
-                      <img src="../assets/img/avatar.png" alt="Avatar">
-                    </div>
-                    <!-- end single sidebar -->                  
-                  </aside>
-                  <!-- / end sidebar -->
-                </div>
+  </section><!-- End Slider -->
 
-                <div class="col-md-9">
-                  <!-- start course content container -->
-                  <div class="mu-course-container mu-course-details">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="mu-latest-course-single">
-                          <div class="mu-latest-course-single-content">
-                            <br>
-                            <br>
-                            <br>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">NIP</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Nama Lengkap</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Tempat, tanggal lahir</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">No Telepon</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Alamat</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Jenis Kelamin</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">KBK</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Expertise</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Mata Kuliah yang diampu</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Pengalaman</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                                <tr>
-                                  <td style="color: #105194; font-weight: bold; width:20%">Daftar Publikasi Penelitian/Karya Ilmiah</td>
-                                  <td>:</td>
-                                  <td>191524052</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div> 
-                      </div>                                   
-                    </div>
-                  </div>
-                  <!-- end course content container -->
-                </div>
-            </div>
-          </div>
-        </div>  
+  <main id="main" data-aos="fade-up">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Detail Pegawai</h2>
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li>Pegawai</li>
+            <li>Lainnya</li>
+            <li id="bc_title">:title</li>
+          </ol>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- End Profil Section -->
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Profil Section ======= -->
+    <section id="mu-course-content">
+      <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12">
+            <div class="mu-course-content-area">
+              <div class="row">
+                  <div class="col-md-3">
+                    <!-- start sidebar -->
+                    <aside class="mu-sidebar">
+                      <!-- start single sidebar -->
+                      <div class="mu-single-sidebar">
+                        <h3>Profil Pegawai</h3>
+                        <hr align="left" style="width: 100%;">
+                        <img id="pegawai_img" src="../assets/img/avatar.png" alt="Avatar">
+                      </div>
+                      <!-- end single sidebar -->                  
+                    </aside>
+                    <!-- / end sidebar -->
+                  </div>
+
+                  <div class="col-md-9">
+                    <!-- start course content container -->
+                    <div class="mu-course-container mu-course-details">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="mu-latest-course-single">
+                            <div class="mu-latest-course-single-content">
+                              <br>
+                              <br>
+                              <br>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">NIP</td>
+                                    <td>:</td>
+                                    <td id="pegawai_nip">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Nama Lengkap</td>
+                                    <td>:</td>
+                                    <td id="pegawai_nama">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Tempat, tanggal lahir</td>
+                                    <td>:</td>
+                                    <td id="pegawai_lahir">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">No Telepon</td>
+                                    <td>:</td>
+                                    <td id="pegawai_kontak">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Alamat</td>
+                                    <td>:</td>
+                                    <td id="pegawai_tinggal">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Jenis Kelamin</td>
+                                    <td>:</td>
+                                    <td  id="pegawai_jk">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Divisi</td>
+                                    <td>:</td>
+                                    <td  id="pegawai_divisi">191524052</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div> 
+                        </div>                                   
+                      </div>
+                    </div>
+                    <!-- end course content container -->
+                  </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <!-- End Profil Section -->
+
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-top" style="background-color: #105194;">
       <div class="container">
         <div class="row">
@@ -228,9 +226,9 @@
           <div class="col-lg-4 col-md-8 footer-links">
             <h4 style="color: white;">Tautan Pintasan</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="../event/event_home.html" style="color: white;">Agenda Jurusan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../berita/berita_home.html" style="color: white;">Berita Jurusan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../mitra/arsip-kerja-sama.html" style="color: white;">Kerja Sama</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="color: white;">Agenda Jurusan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="color: white;">Berita Jurusan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="color: white;">Kerja Sama</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#" style="color: white;">Himpunan Mahasiswa Komputer</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#" style="color: white;">Politeknik Negeri Bandung</a></li>
             </ul>
@@ -287,17 +285,38 @@
 
 </html>
 
-<!-- <script type="text/javascript">
-  berita();
+<script type="text/javascript">
+  var web_strapi = "http://localhost:1337";
+  var id = "<?php echo $_GET['id']; ?>";
 
-	async function berita() {
-	    // fetch data
-      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
-	    let data = await response.json();
-	    console.log(data.judul);
+
+  window.onload = callAllFunc();
+
+  function callAllFunc(){
+    pegawai();
+  }
+
+  function formatMyDate(value, locale = 'en-GB') {
+    return new Date(value).toLocaleDateString(locale);
+  }
+
+  async function pegawai() {
+      // fetch data
+      let response = await fetch(web_strapi + '/stafs/' + id);
+      let data = await response.json();
 
       // set data
-      document.getElementById("judul_utama").innerHTML = data.judul;
-      document.getElementById("slug_berita").innerHTML = data.slug;
-	}
-</script> -->
+      document.getElementById("pegawai_img").src = web_strapi + data.foto.url;
+      document.getElementById("pegawai_nip").innerHTML = data.NIP;
+      document.getElementById("pegawai_nama").innerHTML = data.nama;
+      document.getElementById("bc_title").innerHTML = data.nama;
+      document.getElementById("pegawai_tinggal").innerHTML = data.tempat_tinggal;
+      document.getElementById("pegawai_lahir").innerHTML = data.tempat_tanggal_lahir;
+      document.getElementById("pegawai_kontak").innerHTML = data.kontak;
+      document.getElementById("pegawai_jk").innerHTML = data.jk;
+      document.getElementById("pegawai_divisi").innerHTML = data.divisi;
+
+      console.log(data);
+  }
+
+</script>
