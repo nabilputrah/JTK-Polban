@@ -137,21 +137,18 @@
                     <div class="mu-latest-course-single">
                       <h2><a href="#">Daftar Pengajar (Dosen)</a></h2>
                       <hr align="left">
-                      <div class="mu-latest-course-single-content">
-                        <div class="row" style="font-size: 13px">
-                              <table id="bimz" class="table table-striped table-bordered">
+                      <div class="mu-latest-course-single-content" style="background-color: white;">
+                        <div class="row" style="font-size: 13px; display: block; margin: 0 auto;">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive">
                                   <thead>
                                       <tr>
-                                        <th style="width: 8px">No</th>
-                                          <th>Kategori</th>
-                                          <th>Author</th>
-                                          <th>Komentar</th>
-                                          <th>Like</th>
-                                          <th>Action</th>
+                                        <th class="text-center" style="width: 10px;">NIP</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Foto</th>
+                                        <th class="text-center">Action</th>
                                       </tr>
                                   </thead>
                                   <tbody>
-                                    
                                   </tbody>
                               </table>
                         </div>                      
@@ -252,6 +249,12 @@
 
 </html>
 
+<style type="text/css">
+  .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+</style>
+
 <script>
 var web_strapi = "http://localhost:1337";
 
@@ -263,18 +266,19 @@ $(document).ready(function (){
       dataSrc:"",
       cache: true
     },
-    "fnRowCallback": function(nRow,aData,iDisplayIndex,iDisplayIndexFull) {
-      var index = iDisplayIndex + 1;
-      $('td:eq(0)',nRow).html(index);
-      return nRow;
-    },
     "columns": [
       { "data": "NIP" },
       { "data": "nama" },
-      { "data": "kontak" },
-      { "data": "matkul" },
-      { "data": "pengalaman" },
-      { "data": "pengalaman" }
+      { "data": "foto.formats.thumbnail.url",
+        render: function (data, type, row, meta) {
+          return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
+        }
+      },
+      { "data": "id",
+        render: function (data, type, row, meta) {
+          return '<div class="text-center"><a href=dosen_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
+        }
+      }
     ]
   });
 });
