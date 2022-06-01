@@ -306,7 +306,7 @@
 </html>
 
 <script type="text/javascript">
-  var web_strapi = "http://localhost:1337";
+  var web_strapi = "https://portaljtk.herokuapp.com";
   var id = "<?php echo $_GET['id']; ?>";
 
 
