@@ -160,10 +160,10 @@
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="sarana4_img" src="../assets/img/facility/sarana-lapangan-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana4_img" src="../assets/img/facility/sarana-kelas-1-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="sarana4_nama">Sarana Lapangan</h4>
-          <p id="sarana4_detail">Lapangan</p>
+          <h4 id="sarana4_nama">Sarana Kelas</h4>
+          <p id="sarana4_detail">Kelas 1</p>
         </div>
       </div>
 
@@ -313,9 +313,9 @@
       document.getElementById("slug_berita").innerHTML = data.slug;
 	}
 </script> -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   // Global Var
-  var web_strapi = "https://portaljtk.herokuapp.com";
+  var web_strapi = "https://localhost:1337";
 
   window.onload = callAllFunc();
 
@@ -330,10 +330,11 @@
       var i = 1;
 
       // set data
-      for (i; i <= 3; i++) {
+      for (i; i <= 9; i++) {
         console.log(data);
         document.getElementById("sarana"+ i +"_nama").innerHTML = data[i-1].nama_sarana;
         document.getElementById("sarana"+ i +"_detail").innerHTML = data[i-1].detail;
-        document.getElementById("sarana"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;      }
+        document.getElementById("sarana"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;      
+      }
 	}
-</script>
+</script> -->

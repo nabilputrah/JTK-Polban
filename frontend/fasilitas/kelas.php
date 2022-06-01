@@ -313,7 +313,7 @@
       document.getElementById("slug_berita").innerHTML = data.slug;
 	}
 </script> -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   // Global Var
   var web_strapi = "https://portaljtk.herokuapp.com";
 
@@ -336,4 +336,4 @@
         document.getElementById("sarana"+ i +"_detail").innerHTML = data[i-1].detail;
         document.getElementById("sarana"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;      }
 	}
-</script>
+</script> -->
