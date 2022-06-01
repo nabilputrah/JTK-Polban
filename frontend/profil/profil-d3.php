@@ -63,7 +63,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="../index.php">Beranda</a></li>
-          <li><a class="nav-link active" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link active" href="profil-jurusan.php">Tentang JTK</a></li>
           <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
           <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
           <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
@@ -77,7 +77,7 @@
                 <ul>
                   <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
                   <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Program Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>

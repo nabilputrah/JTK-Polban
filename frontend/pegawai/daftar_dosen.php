@@ -77,13 +77,13 @@
                 <ul>
                   <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
                   <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Program Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
+                  <li><a href="daftar_dosen.php">Dosen</a></li>
+                  <li><a href="daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
