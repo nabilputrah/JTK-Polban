@@ -10,6 +10,30 @@
     },
     {
       "method": "GET",
+      "path": "/prestasis/indexpenghargaan",
+      "handler": "prestasi.indexPenghargaan",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestasis/indexpkm",
+      "handler": "prestasi.indexPKM",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestasis/indexmapres",
+      "handler": "prestasi.indexMapres",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/prestasis/count",
       "handler": "prestasi.count",
       "config": {
@@ -18,7 +42,7 @@
     },
     {
       "method": "GET",
-      "path": "/prestasis/:id",
+      "path": "/prestasis/:slug",
       "handler": "prestasi.findOne",
       "config": {
         "policies": []
