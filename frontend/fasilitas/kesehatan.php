@@ -314,7 +314,7 @@
 </script> -->
 <script type="text/javascript">
   // Global Var
-  var web_strapi = "http://localhost:1337";
+  var web_strapi = "https://portaljtk.herokuapp.com";
 
   window.onload = callAllFunc();
 
