@@ -15,7 +15,7 @@
     "kode_matkul": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "nama_matkul": {
       "type": "string",
