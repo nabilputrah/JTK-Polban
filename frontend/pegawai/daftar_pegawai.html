@@ -22,6 +22,7 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -81,8 +82,8 @@
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="daftar_dosen.html">Dosen</a></li>
+                  <li><a href="daftar_pegawai.html">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -108,25 +109,63 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Daftar Pegawai</h2>
+          <h2>Daftar Pegawai Lainnya</h2>
           <ol>
             <li><a href="index.html">Beranda</a></li>
             <li>Pegawai</li>
+            <li>Lainnya</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          <!-- konten isi disini kawan -->
-        </p>
+  <!-- ======= List Section ======= -->
+  <section id="mu-course-content">
+    <div class="container" data-aos="fade-up">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-12">
+          <div class="mu-course-content-area">
+            <div class="row">
+              <div class="section-title">
+                <a href="daftar_dosen.html"><h2>Dosen</h2></a>
+                <h2 style="color: orange;">Lainnya</h2>
+              </div>
+              <!-- start course content container -->
+              <div class="mu-course-container mu-course-details">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mu-latest-course-single">
+                      <h2><a href="#">Daftar Pegawai Lainnya</a></h2>
+                      <hr align="left">
+                      <div class="mu-latest-course-single-content" style="background-color: white;">
+                        <div class="row" style="font-size: 13px; display: block; margin: 0 auto;">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive">
+                                  <thead>
+                                      <tr>
+                                        <th class="text-center" style="width: 10px;">NIP</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Foto</th>
+                                        <th class="text-center">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  </tbody>
+                              </table>
+                        </div>                      
+                      </div>
+                    </div> 
+                  </div>                                   
+                </div>
+              </div>
+              <!-- end course content container -->
+            </div>
+          </div>
+        </div>  
       </div>
-    </section>
-
-  </main><!-- End #main -->
+    </div>
+  </section>
+  <!-- End List Section -->
 
   </main><!-- End #main -->
 
@@ -201,6 +240,8 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -208,3 +249,39 @@
 </body>
 
 </html>
+
+<style type="text/css">
+  .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+</style>
+
+<script>
+var web_strapi = "http://localhost:1337";
+
+$(document).ready(function (){
+  $('#bimz').DataTable({
+    processing: true,
+    "ajax": {
+      "url": web_strapi + "/stafs",
+      dataSrc:"",
+      cache: true
+    },
+    "columns": [
+      { "data": "NIP" },
+      { "data": "nama" },
+      { "data": "foto.formats.thumbnail.url",
+        render: function (data, type, row, meta) {
+          return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
+        }
+      },
+      { "data": "id",
+        render: function (data, type, row, meta) {
+          return '<div class="text-center"><a href=pegawai_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
+        }
+      }
+    ]
+  });
+});
+
+</script>
