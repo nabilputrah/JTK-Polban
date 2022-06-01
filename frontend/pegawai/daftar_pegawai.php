@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Fasilitas - Portal JTK</title>
+  <title>Pegawai | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -23,6 +22,7 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -37,7 +37,6 @@
 
 <body>
 
-
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -51,41 +50,40 @@
     </div>
   </section>
 
-
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
           <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="daftar_dosen.php">Dosen</a></li>
+                  <li><a href="daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -97,128 +95,82 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Fasilitas</h1>
-  </section><!-- End Hero -->
+      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspPegawai</span></h1>
+    </div>
+  </section><!-- End Slider -->
+
+  <main id="main" data-aos="fade-up">
 
     <!-- ======= Breadcrumbs ======= -->
     <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Fasilitas</h2>
+          <h2>Daftar Pegawai Lainnya</h2>
           <ol>
-            <li><a href="index.html">Beranda</a></li>
-            <li>Fasilitas</li>
+            <li><a href="index.php">Beranda</a></li>
+            <li>Pegawai</li>
+            <li>Lainnya</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
- <!-- ======= Contact Section ======= -->
- <section id="portfolio" class="portfolio" style="background-color: #CFE4F9;">
-  <div class="container" data-aos="fade-up">
 
-    <div class="section-title">
-      <div id="portofolio-filters">
-        <a href="#"><h2 data-filter=".filter-app" style="font-size: 21px">Kelas</h2></a>
-        <a href="fasilitas.html"><h2 style="color: #f28c2e ;font-size: 21px">Laboratorium</h2></a>
-        <a href="#"><h2 style="color: #f28c2e ;font-size: 21px">Kesehatan</h2></a>
-        <a href="#"><h2 style="color: #f28c2e ;font-size: 21px">Tempat Ibadah</h2></a>
-        <a href="#"><h2 style="color: #f28c2e ;font-size: 21px">Kantin</h2></a>
-        <a href="#"><h2 style="color: #f28c2e ;font-size: 21px">Toilet</h2></a>
+  <!-- ======= List Section ======= -->
+  <section id="mu-course-content">
+    <div class="container" data-aos="fade-up">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-12">
+          <div class="mu-course-content-area">
+            <div class="row">
+              <div class="section-title">
+                <a href="daftar_dosen.php"><h2>Dosen</h2></a>
+                <h2 style="color: orange;">Lainnya</h2>
+              </div>
+              <!-- start course content container -->
+              <div class="mu-course-container mu-course-details">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mu-latest-course-single">
+                      <h2><a href="#">Daftar Pegawai Lainnya</a></h2>
+                      <hr align="left">
+                      <div class="mu-latest-course-single-content" style="background-color: white;">
+                        <div class="row" style="font-size: 13px; display: block; margin: 0 auto;">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive">
+                                  <thead>
+                                      <tr>
+                                        <th class="text-center" style="width: 10px;">NIP</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Foto</th>
+                                        <th class="text-center">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  </tbody>
+                              </table>
+                        </div>                      
+                      </div>
+                    </div> 
+                  </div>                                   
+                </div>
+              </div>
+              <!-- end course content container -->
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
-  
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+  </section>
+  <!-- End List Section -->
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img id="kegiatan1_img" src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="kegiatan1_title"></h4>
-          <p id="kegiatan1_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img id="lainnya1_img" src="../assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="lainnya1_title"></h4>
-          <p id="lainnya1_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img id="kegiatan2_img" src="../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="kegiatan2_title"></h4>
-          <p id="kegiatan2_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <img id="news2_img" src="../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="news2_title"></h4>
-          <p id="news2_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img id="lainnya2_img" src="../assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="lainnya2_title"></h4>
-          <p id="lainnya2_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img id="kegiatan3_img" src="../assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="kegiatan3_title"></h4>
-          <p id="kegiatan3_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <img id="news1_img" src="../assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="news1_title"></h4>
-          <p id="news1_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <img id="news3_img" src="../assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="news3_title"></h4>
-          <p id="news3_desc"></p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img id="lainnya3_img" src="../assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4 id="lainnya3_title"></h4>
-          <p id="lainnya3_desc"></p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Gallery Section -->
-  <!-- End Contact Section -->
-
-
-
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
-
     <div class="footer-top" style="background-color: #105194;">
       <div class="container">
         <div class="row">
@@ -288,6 +240,8 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -296,17 +250,38 @@
 
 </html>
 
-<!-- <script type="text/javascript">
-  berita();
+<style type="text/css">
+  .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+</style>
 
-	async function berita() {
-	    // fetch data
-      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
-	    let data = await response.json();
-	    console.log(data.judul);
+<script>
+var web_strapi = "https://portaljtk.herokuapp.com";
 
-      // set data
-      document.getElementById("judul_utama").innerHTML = data.judul;
-      document.getElementById("slug_berita").innerHTML = data.slug;
-	}
-</script> -->
+$(document).ready(function (){
+  $('#bimz').DataTable({
+    processing: true,
+    "ajax": {
+      "url": web_strapi + "/stafs",
+      dataSrc:"",
+      cache: true
+    },
+    "columns": [
+      { "data": "NIP" },
+      { "data": "nama" },
+      { "data": "foto.formats.thumbnail.url",
+        render: function (data, type, row, meta) {
+          return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
+        }
+      },
+      { "data": "id",
+        render: function (data, type, row, meta) {
+          return '<div class="text-center"><a href=pegawai_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
+        }
+      }
+    ]
+  });
+});
+
+</script>

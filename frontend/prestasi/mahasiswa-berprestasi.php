@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kurikulum D4 | Politeknik Negeri Bandung</title>
+  <title>Mahasiswa Berprestasi | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,34 +56,34 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link active" href="d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
           <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -92,14 +92,13 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Kurikulum<span>-D4</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspPrestasi</span></h1>
     </div>
   </section><!-- End Hero -->
  
@@ -110,31 +109,85 @@
         <div class="col-md-12">
           <div class="mu-course-content-area">
             <div class="row">
-              <div class="section-title">
-                <a href="d3-2016.html"><h2>D3 Teknik Informatika</h2></a>
-                <h2 style="color: orange;">D4 Teknik Informatika</h2>
-              </div>
                 <div class="col-md-9">
                   <!-- start course content container -->
                   <div class="mu-course-container mu-course-details">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="mu-latest-course-single">
-                          <h2><a href="#">Kurikulum D4 2021</a></h2>
+                          <h2><a href="#">Mahasiswa Berprestasi</a></h2>
                           <hr align="left">
-                          <div class="mu-latest-course-single-content">
-                            <h3>Profil Lulusan</h3>
-                            <ol>
-                              <li>Senior Programmer : Senior programmer menulis program perangkat lunak. Ia mentransformasikan rancangan program yang dibuat oleh software designers/engineers/system analyst menjadi instruksi-instruksi yang dapat dikerjakan oleh komputer.</li>
-                              <li>Software Developer : Software developer mengembangkan aplikasi-aplikasi yang memungkinkan orang untuk menjalankan tugas-tugas spesifik pada komputer atau perangkat lain.</li>
-                              <li>Database Administrator : Database administrator (DBA) menyimpan dan mengorganisasikan data dengan menggunakan perangkat lunak khusus seperti DBMS dan lainnya. Ia memastikan bahwa data tersedia dan aman/terlindungi dari akses oleh pihak-pihak yang tidak berhak.</li>
-                              <li>Web Developer : Web developer merancang dan membuat websites. Ia bertanggung jawab terhadap rupa (looks and feels) dari website. Ia juga bertanggung jawab terhadap aspek-aspek teknis website, seperti performansi dan kapasitas, yang merupakan ukuran dari website’s speed dan sejauh mana website dapat menangani traffic. Ia juga dimungkinkan untuk membuat konten dari website.</li>
-                              <li>Multimedia Developer : Multimedia developer adalah profesional pengembangan multimedia yang menggabungkan desain dan pengetahuan teknis untuk penelitian, menganalisis, mengevaluasi, desain, memrogram, dan memodifikasi aplikasi yang menggabungkan teks, grafik, animasi, pencitraan, audio-video display, dan media interaktif lainnya</li>
-                              <li>Information Systems Analyst : Information Systems Analyst mempelajari sistem-sistem berbasis TIK beserta prosedur-prosedurnya dan merancang solusi-solusi sistem informasi untuk membantu organisasi agar dapat beroperasi dengan lebih efisien dan efektif. Ia menerapkan TIK pada proses bisnis organisasi dengan cara memahami kebutuhan dan batasan keduanya (TIK dan bisnis).</li>
-                              <li>Computer Support Specialist : Computer support specialist menyediakan bantuan dan advis kepada orang-orang dan organisasi-organisasi tentang bagaimana menggunakan perangkat lunak dan perlengkapan komputer. Sebutan lain: computer network support specialists, support information technology (IT) staff, dan computer user support specialists.</li>
-                            </ol>
-                            <h3>Struktur Mata Kuliah Per Semester </h3>
-                          </div>
+
+                          <!-- ======= Prestasi Section ======= -->
+                          <section id="about" class="about" style="padding-top: 1%;">
+                            <div class="container" data-aos="fade-up">
+                          
+                                <div class="row" style="margin-left: -5%;">
+                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                    <img id="mapres1_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
+                                  </div>
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                      <div class="section-title">
+                                          <h4 id="mapres1_judul"></h4>
+                                        <h5>Prestasi</h5>
+                                        <h5 class="author"><span id="mapres1_author"></span> | <span id="mapres1_published"></span></h5>
+                                        <a href="#" id="mapres1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>   
+                                    </div>
+                                </div>
+                        
+                                <br>
+                      
+                                <div class="row" style="margin-left: -5%;">
+                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                    <img id="mapres2_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
+                                  </div>
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                      <div class="section-title">
+                                          <h4 id="mapres2_judul"></h4>
+                                        <h5>Prestasi</h5>
+                                        <h5 class="author"><span id="mapres2_author"></span> | <span id="mapres2_published"></span></h5>
+                                        <a href="#" id="mapres2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>   
+                                    </div>
+                                </div>
+                        
+                                <br>
+                      
+                                <div class="row" style="margin-left: -5%;">
+                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                    <img id="mapres3_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
+                                  </div>
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                      <div class="section-title">
+                                          <h4 id="mapres3_judul"></h4>
+                                        <h5>Prestasi</h5>
+                                        <h5 class="author"><span id="mapres3_author"></span> | <span id="mapres3_published"></span></h5>
+                                        <a href="#" id="mapres3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>   
+                                    </div>
+                                </div>
+                        
+                                <br>
+                      
+                                <div class="row" style="margin-left: -5%;">
+                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                    <img id="mapres4_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
+                                  </div>
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                      <div class="section-title">
+                                          <h4 id="mapres4_judul"></h4>
+                                        <h5>Prestasi</h5>
+                                        <h5 class="author"><span id="mapres4_author"></span> | <span id="mapres4_published"></span></h5>
+                                        <a href="#" id="mapres4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>   
+                                    </div>
+                                </div>
+                        
+                                <br>
+                            </div>
+                          </section><!-- End Prestasi Section -->
+
                         </div> 
                       </div>                                   
                     </div>
@@ -147,11 +200,12 @@
                   <aside class="mu-sidebar">
                     <!-- start single sidebar -->
                     <div class="mu-single-sidebar">
-                      <h3>Kurikulum</h3>
+                      <h3>Kerjasama</h3>
                       <hr align="left">
                       <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a href="d4-2016.html">Kurikulum 2016</a></li>
-                        <li><a style="border-left: 6px solid #105194;" href="">Kurikulum 2021</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                        <li><a href="penghargaan.php">Penghargaan</a></li>
+                        <li><a href="program-kreativitas-mahasiswa.php">Program Kreativitas Mahasiswa</a></li>
                       </ul>
                     </div>
                     <hr class="mu-single-hr">
@@ -247,17 +301,35 @@
 
 </html>
 
-<!-- <script type="text/javascript">
-  berita();
+<script type="text/javascript">
+  // Global Var
+  var web_strapi = "https://portaljtk.herokuapp.com";
 
-	async function berita() {
+  window.onload = callAllFunc();
+
+  function callAllFunc(){
+    arsip_kerjasama();
+  }
+  function formatMyDate(value, locale = 'en-GB') {
+    return new Date(value).toLocaleDateString(locale);
+  }
+	async function arsip_kerjasama() {
 	    // fetch data
-      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
+      let response = await fetch(web_strapi + '/prestasis/indexmapres');
 	    let data = await response.json();
-	    console.log(data.judul);
+       var i = 1;
 
       // set data
-      document.getElementById("judul_utama").innerHTML = data.judul;
-      document.getElementById("slug_berita").innerHTML = data.slug;
+      for (i; i <= 4; i++) {
+        console.log(data);
+        document.getElementById("mapres"+ i +"_judul").innerHTML = data[i-1].judul;
+        document.getElementById("mapres"+ i +"_author").innerHTML = data[i-1].Author;
+        document.getElementById("mapres"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
+        document.getElementById("mapres"+ i +"_href").href = "prestasi-detail.php?id=" + data[i-1].slug;
+        document.getElementById("mapres"+ i +"_img").src = web_strapi + data[i-1].attachment.url;
+        
+       }
 	}
-</script> -->
+
+
+</script>

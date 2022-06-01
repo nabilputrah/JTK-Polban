@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Fasilitas - Portal JTK</title>
+  <title>Study Tracer D4 | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -37,7 +36,6 @@
 
 <body>
 
-
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -51,41 +49,40 @@
     </div>
   </section>
 
-
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link active" href="d3.php">Lulusan</a></li>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -97,129 +94,56 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Fasilitas</h1>
-  </section><!-- End Hero -->
+      <h1 id="judul_utama" class="d-flex justify-content-center">Lulusan<span>-D4</span></h1>
+    </div>
+  </section><!-- End Slider -->
+
+  <main id="main" data-aos="fade-up">
 
     <!-- ======= Breadcrumbs ======= -->
     <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Fasilitas</h2>
+          <h2>Lulusan D4 - Tracer Study</h2>
           <ol>
-            <li><a href="index.html">Beranda</a></li>
-            <li>Fasilitas</li>
+            <li><a href="index.php">Beranda</a></li>
+            <li>Lulusan D4</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
- <!-- ======= Contact Section ======= -->
- <section id="portfolio" class="portfolio" style="background-color: #CFE4F9;">
-  <div class="container" data-aos="fade-up">
 
-    <div class="section-title">
-      <div id="portofolio-filters">
-        <a href="kelas.html"><h2 style="color: #f28c2e ;font-size: 21px">Kelas</h2></a>
-        <a href="fasilitas.html"><h2 style="color: #f28c2e ;font-size: 21px">Laboratorium</h2></a>
-        <a href="kesehatan.html"><h2 style="color: #f28c2e ;font-size: 21px">Kesehatan</h2></a>
-        <a href="tempatIbadah.html"><h2 style="color: #f28c2e ;font-size: 21px">Tempat Ibadah</h2></a>
-        <a href="#"><h2 style="font-size: 21px">Kantin</h2></a>
-        <a href="toilet.html"><h2 style="color: #f28c2e ;font-size: 21px">Toilet</h2></a>
-      </div>
-    </div>
-  
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img src="../assets/img/facility/gedung1.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Gedung</h4>
-          <p >Gedung</p>
+    <section class="inner-page">
+      <div class="container">
+        <div class="section-title">
+          <a href="d3.php"><h2>D3 Teknik Informatika</h2></a>
+          <h2 style="color: orange;">D4 Teknik Informatika</h2>
         </div>
+        <p>
+          <h3>Grafik Tingkat Kelulusan</h3>
+          <h7>Tingkat Kelulusan dari D4 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2018.</h7>
+          <div class="d-flex justify-content-between align-items-center">
+            <div id="plotLulus" class="align-items-center" style="width:100%;max-width:700px"></div>
+          </div>
+          <hr>
+          <h3>Grafik Tracer Study</h3>
+          <h7>Tracer Study dari D4 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2018.</h7>
+          <div class="d-flex justify-content-between align-items-center">
+            <div id="plotTracer" class="align-items-center" style="width:100%;max-width:700px"></div>
+          </div>
+        </p>
       </div>
+    </section>
 
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img src="../assets/img/facility/sarana-kelas-2-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Kelas</h4>
-          <p >Kelas 2</p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="kegiatan2_img" src="../assets/img/facility/sarana-kelas-1-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Kelas</h4>
-          <p>Kelas 1</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="news2_img" src="../assets/img/facility/sarana-lapangan-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Lapangan</h4>
-          <p>Lapangan</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="lainnya2_img" src="../assets/img/facility/sarana-mading-mahasiswa-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Mading</h4>
-          <p>Mading</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="kegiatan3_img" src="../assets/img/facility/sarana-papan-jurusan-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Jurusan</h4>
-          <p>Papan Jurusan</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="news1_img" src="../assets/img/facility/sarana-rsg-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Gedung</h4>
-          <p>Ruang Serba Guna</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="news3_img" src="../assets/img/facility/sarana-taman-depan-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Taman</h4>
-          <p>Taman Depan</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="lainnya3_img" src="../assets/img/facility/sarana-visi-misi-jurusan-1024x576.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Sarana Jurusan</h4>
-          <p>Visi Misi</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Gallery Section -->
-  <!-- End Contact Section -->
-
-
-
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
-
     <div class="footer-top" style="background-color: #105194;">
       <div class="container">
         <div class="row">
@@ -290,6 +214,9 @@
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Plot -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
@@ -297,17 +224,55 @@
 
 </html>
 
-<!-- <script type="text/javascript">
-  berita();
+<script>
+  var web_strapi = "http://localhost:1337";
 
-	async function berita() {
-	    // fetch data
-      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
-	    let data = await response.json();
-	    console.log(data.judul);
+  window.onload = callFunc();
 
-      // set data
-      document.getElementById("judul_utama").innerHTML = data.judul;
-      document.getElementById("slug_berita").innerHTML = data.slug;
-	}
-</script> -->
+  function callFunc(){
+    plotLulus();
+    plotTracer();
+  }
+
+  async function plotLulus(){
+    // fetch data
+    let response = await fetch(web_strapi + '/tracerstudies/628f540c2cde253364591da0');
+    let result = await response.json();
+
+    var xArray = ["Lulus Tepat Waktu", "Lulus Tidak Tepat Waktu", "Tidak Lulus"];
+    var yArray = [parseInt(result.lulus), parseInt(result.lulus_tidaktepat), parseInt(result.tidak_lulus)];
+
+    var data = [{
+      x:xArray,
+      y:yArray,
+      type:"bar",
+      marker: {
+        color: 'red'
+      }
+    }];
+
+    var layout = {};
+
+    Plotly.newPlot("plotLulus", data, layout);
+  }
+
+  async function plotTracer(){
+    // fetch data
+    let response = await fetch(web_strapi + '/tracerstudies/628f540c2cde253364591da0');
+    let result = await response.json();
+
+    var xArray = ["Bekerja", "Melanjutkan Study", "Wirausaha", "Tidak Bekerja", "Belum Diketahui"];
+    var yArray = [parseInt(result.bekerja), parseInt(result.melanjutkan_study), parseInt(result.wirausaha), parseInt(result.tidak_bekerja), parseInt(result.belum_diketahui)];
+
+    var data = [{
+      x:xArray,
+      y:yArray,
+      type:"bar"
+    }];
+
+    var layout = {};
+
+    Plotly.newPlot("plotTracer", data, layout);
+  }
+  
+</script>

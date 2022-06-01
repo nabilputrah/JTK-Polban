@@ -56,34 +56,34 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
           <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -205,9 +205,9 @@
                       <h3>Kerjasama</h3>
                       <hr align="left">
                       <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a href="mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                        <li><a href="penghargaan.html">Penghargaan</a></li>
-                        <li><a style="border-left: 6px solid #105194;" href="program-kreativitas-mahasiswa.html">Program Kreativitas Mahasiswa</a></li>
+                        <li><a href="mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                        <li><a href="penghargaan.php">Penghargaan</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="program-kreativitas-mahasiswa.php">Program Kreativitas Mahasiswa</a></li>
                       </ul>
                     </div>
                     <hr class="mu-single-hr">

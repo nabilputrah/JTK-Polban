@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kurikulum D4 | Politeknik Negeri Bandung</title>
+  <title>Fasilitas - Portal JTK</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,6 +37,7 @@
 
 <body>
 
+
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -50,40 +51,41 @@
     </div>
   </section>
 
+
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link active" href="d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
-          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -92,83 +94,131 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Kurikulum<span>-D4</span></h1>
-    </div>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Fasilitas</h1>
   </section><!-- End Hero -->
- 
-  <!-- ======= Profil Section ======= -->
-  <section id="mu-course-content">
-    <div class="container" data-aos="fade-up">
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-md-12">
-          <div class="mu-course-content-area">
-            <div class="row">
-              <div class="section-title">
-                <a href="d3-2016.html"><h2>D3 Teknik Informatika</h2></a>
-                <h2 style="color: orange;">D4 Teknik Informatika</h2>
-              </div>
-                <div class="col-md-9">
-                  <!-- start course content container -->
-                  <div class="mu-course-container mu-course-details">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="mu-latest-course-single">
-                          <h2><a href="#">Kurikulum D4 2016</a></h2>
-                          <hr align="left">
-                          <div class="mu-latest-course-single-content">
-                            <h3>Profil Lulusan</h3>
-                            <ol>
-                              <li>Senior Programmer : Senior programmer menulis program perangkat lunak. Ia mentransformasikan rancangan program yang dibuat oleh software designers/engineers/system analyst menjadi instruksi-instruksi yang dapat dikerjakan oleh komputer.</li>
-                              <li>Software Developer : Software developer mengembangkan aplikasi-aplikasi yang memungkinkan orang untuk menjalankan tugas-tugas spesifik pada komputer atau perangkat lain.</li>
-                              <li>Database Administrator : Database administrator (DBA) menyimpan dan mengorganisasikan data dengan menggunakan perangkat lunak khusus seperti DBMS dan lainnya. Ia memastikan bahwa data tersedia dan aman/terlindungi dari akses oleh pihak-pihak yang tidak berhak.</li>
-                              <li>Web Developer : Web developer merancang dan membuat websites. Ia bertanggung jawab terhadap rupa (looks and feels) dari website. Ia juga bertanggung jawab terhadap aspek-aspek teknis website, seperti performansi dan kapasitas, yang merupakan ukuran dari website’s speed dan sejauh mana website dapat menangani traffic. Ia juga dimungkinkan untuk membuat konten dari website.</li>
-                              <li>Multimedia Developer : Multimedia developer adalah profesional pengembangan multimedia yang menggabungkan desain dan pengetahuan teknis untuk penelitian, menganalisis, mengevaluasi, desain, memrogram, dan memodifikasi aplikasi yang menggabungkan teks, grafik, animasi, pencitraan, audio-video display, dan media interaktif lainnya</li>
-                              <li>Information Systems Analyst : Information Systems Analyst mempelajari sistem-sistem berbasis TIK beserta prosedur-prosedurnya dan merancang solusi-solusi sistem informasi untuk membantu organisasi agar dapat beroperasi dengan lebih efisien dan efektif. Ia menerapkan TIK pada proses bisnis organisasi dengan cara memahami kebutuhan dan batasan keduanya (TIK dan bisnis).</li>
-                              <li>Computer Support Specialist : Computer support specialist menyediakan bantuan dan advis kepada orang-orang dan organisasi-organisasi tentang bagaimana menggunakan perangkat lunak dan perlengkapan komputer. Sebutan lain: computer network support specialists, support information technology (IT) staff, dan computer user support specialists.</li>
-                            </ol>
-                            <h3>Struktur Mata Kuliah Per Semester </h3>
-                          </div>
-                        </div> 
-                      </div>                                   
-                    </div>
-                  </div>
-                  <!-- end course content container -->
-                </div>
 
-                <div class="col-md-3">
-                  <!-- start sidebar -->
-                  <aside class="mu-sidebar">
-                    <!-- start single sidebar -->
-                    <div class="mu-single-sidebar">
-                      <h3>Kurikulum</h3>
-                      <hr align="left">
-                      <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a style="border-left: 6px solid #105194;" href="">Kurikulum 2016</a></li>
-                        <li><a href="d4-2021.html">Kurikulum 2021</a></li>
-                      </ul>
-                    </div>
-                    <hr class="mu-single-hr">
-                    <!-- end single sidebar -->
-                  </aside>
-                  <!-- / end sidebar -->
-                </div>
-            </div>
-          </div>
-        </div>  
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Fasilitas</h2>
+          <ol>
+            <li><a href="index.php">Beranda</a></li>
+            <li>Fasilitas</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+ <!-- ======= Contact Section ======= -->
+ <section id="portfolio" class="portfolio" style="background-color: #CFE4F9;">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <div id="portofolio-filters">
+        <a href="kelas.php"><h2 style="color: #f28c2e ;font-size: 21px">Kelas</h2></a>
+        <a href="#"><h2 style="font-size: 21px">Laboratorium</h2></a>
+        <a href="kesehatan.php"><h2 style="color: #f28c2e ;font-size: 21px">Kesehatan</h2></a>
+        <a href="tempatIbadah.php"><h2 style="color: #f28c2e ;font-size: 21px">Tempat Ibadah</h2></a>
+        <a href="kantin.php"><h2 style="color: #f28c2e ;font-size: 21px">Kantin</h2></a>
+        <a href="toilet.php"><h2 style="color: #f28c2e ;font-size: 21px">Toilet</h2></a>
       </div>
     </div>
-  </section>
-  <!-- End Profil Section -->
+  
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <img src="../assets/img/facility/gedung1.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Gedung</h4>
+          <p >Gedung</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img src="../assets/img/facility/sarana-kelas-2-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Kelas</h4>
+          <p >Kelas 2</p>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="kegiatan2_img" src="../assets/img/facility/sarana-kelas-1-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Kelas</h4>
+          <p>Kelas 1</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="news2_img" src="../assets/img/facility/sarana-lapangan-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Lapangan</h4>
+          <p>Lapangan</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="lainnya2_img" src="../assets/img/facility/sarana-mading-mahasiswa-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Mading</h4>
+          <p>Mading</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="kegiatan3_img" src="../assets/img/facility/sarana-papan-jurusan-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Jurusan</h4>
+          <p>Papan Jurusan</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="news1_img" src="../assets/img/facility/sarana-rsg-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Gedung</h4>
+          <p>Ruang Serba Guna</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="news3_img" src="../assets/img/facility/sarana-taman-depan-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Taman</h4>
+          <p>Taman Depan</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="lainnya3_img" src="../assets/img/facility/sarana-visi-misi-jurusan-1024x576.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>Sarana Jurusan</h4>
+          <p>Visi Misi</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Gallery Section -->
+  <!-- End Contact Section -->
+
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+
 
     <div class="footer-top" style="background-color: #105194;">
       <div class="container">

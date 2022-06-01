@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dosen | Politeknik Negeri Bandung</title>
+  <title>Profil D3 | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -22,7 +23,6 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -56,34 +56,34 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link active" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -95,81 +95,101 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Slider Section ======= -->
-  <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspDosen</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Profil<span>-D3</span></h1>
     </div>
-  </section><!-- End Slider -->
-
-  <main id="main" data-aos="fade-up">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Daftar Dosen</h2>
-          <ol>
-            <li><a href="index.html">Beranda</a></li>
-            <li>Dosen</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-  <!-- ======= List Section ======= -->
+  </section><!-- End Hero -->
+ 
+  <!-- ======= Profil Section ======= -->
   <section id="mu-course-content">
     <div class="container" data-aos="fade-up">
       <div class="row" data-aos="fade-up" data-aos-delay="100">
         <div class="col-md-12">
           <div class="mu-course-content-area">
             <div class="row">
-              <div class="section-title">
-                <h2 style="color: orange;">Dosen</h2>
-                <a href="daftar_pegawai.html"><h2>Lainnya</h2></a>
-              </div>
-              <!-- start course content container -->
-              <div class="mu-course-container mu-course-details">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="mu-latest-course-single">
-                      <h2><a href="#">Daftar Pengajar (Dosen)</a></h2>
-                      <hr align="left">
-                      <div class="mu-latest-course-single-content" style="background-color: white;">
-                        <div class="row" style="font-size: 13px; display: block; margin: 0 auto;">
-                              <table id="bimz" class="table table-striped table-bordered table-responsive">
-                                  <thead>
-                                      <tr>
-                                        <th class="text-center" style="width: 10px;">NIP</th>
-                                        <th class="text-center">Nama</th>
-                                        <th class="text-center">Foto</th>
-                                        <th class="text-center">Action</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                  </tbody>
-                              </table>
-                        </div>                      
-                      </div>
-                    </div> 
-                  </div>                                   
+                <div class="col-md-9">
+                  <!-- start course content container -->
+                  <div class="mu-course-container mu-course-details">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="mu-latest-course-single">
+                          <h2><a href="#">Profil Program Studi D3</a></h2>
+                          <hr align="left">
+                          <!-- <hr width="50%;" color="black" size="50" align="left">  -->
+                          <figure class="mu-latest-course-img">  
+                            <a href="#"><img src="../assets/img/banner.jpg" alt="img"></a>
+                          </figure>
+                          <div class="mu-latest-course-single-content">
+                            <h3>Tujuan Program Studi</h3>
+                            <ol>
+                              <li>Menghasilkan tenaga di bidang perancangan dan implementasi perangkat lunak bisnis serta perancangan solusi bisnis berbasis teknologi informasi untuk menunjang kebutuhan masyarakat dan industri di lingkup nasional dan internasional, yang memiliki sikap dan kemampuan sebagai berikut:</li>
+                              <ol type="i">
+                                <li>Beradaptasi terhadap perkembangan teknologi informasi</li>
+                                <li>Belajar sepanjang hayat dan ulet</li>
+                                <li>Berpikir kreatif, analitis dan sistematis</li>
+                                <li>Berwirausaha</li>
+                                <li>Bermoral</li>
+                                <li>Berkomunikasi dalam bahasa Internasional</li>
+                              </ol>
+                              <li>Menghasilkan lulusan dengan kompetensi yang diakui pada tingkat nasional maupun internasional.</li>
+                              <li>Mendorong mahasiswa untuk menghasilkan produk terapan di bidang perangkat lunak bisnis yang bermanfaat bagi masyarakat dan industri baik nasional maupun internasional.</li>
+                              <li>Menghasilkan produk pelayanan dan produk penelitian terapan di bidang teknologi informasi yang bermanfaat bagi masyarakat dan industri baik di tingkat nasional maupun internasional.</li>
+                            </ol>
+                            <h3>Visi</h3>
+                            <p>Menjadi Program Studi unggulan dan terdepan dalam program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional pada tahun 2025.</p>
+                            <h3>Misi</h3>
+                            <ol>
+                              <li>Menyelenggarakan program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional.</li>
+                              <li>Melakukan penelitian terapan yang dapat digunakan oleh Industri, Institusi atau Masyarakat baik ditingkat nasional maupun internasional.</li>
+                              <li>Melaksanakan pengabdian kepada masyarakat pada lingkup lokal, regional dan nasional.</li>
+                            </ol>
+                          </div>
+                          </div> 
+                      </div>                                   
+                    </div>
+                  </div>
+                  <!-- end course content container -->
                 </div>
-              </div>
-              <!-- end course content container -->
+
+                <div class="col-md-3">
+                  <!-- start sidebar -->
+                  <aside class="mu-sidebar">
+                    <!-- start single sidebar -->
+                    <div class="mu-single-sidebar">
+                      <h3>Profil</h3>
+                      <hr align="left">
+                      <ul class="mu-sidebar-catg" style="list-style: none;">
+                        <li><a href="profil-jurusan.php">Profil Jurusan</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="profil-d3.php">Profil Program Studi D3</a></li>
+                        <li><a href="profil-d4.php">Profil Program Studi D4</a></li>
+                        <li><a href="">Profil Pegawai</a></li>
+                      </ul>
+                    </div>
+                    <hr class="mu-single-hr">
+                    <!-- end single sidebar -->
+                    <!-- start single sidebar -->
+                    <div class="mu-single-sidebar">
+                      <h4>Ketua Prodi</h4>
+                      <img src="../assets/img/profil/kaprodi-d3.jpg" alt="Avatar">
+                      <p>Ghifari Munawar, M.T.</p>
+                    </div>
+                    <!-- end single sidebar -->                  
+                  </aside>
+                  <!-- / end sidebar -->
+                </div>
             </div>
           </div>
         </div>  
       </div>
     </div>
   </section>
-  <!-- End List Section -->
-
-  </main><!-- End #main -->
+  <!-- End Profil Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+
     <div class="footer-top" style="background-color: #105194;">
       <div class="container">
         <div class="row">
@@ -239,8 +259,6 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -249,38 +267,17 @@
 
 </html>
 
-<style type="text/css">
-  .table > tbody > tr > td {
-    vertical-align: middle;
-  }
-</style>
+<!-- <script type="text/javascript">
+  berita();
 
-<script>
-var web_strapi = "https://portaljtk.herokuapp.com";
+	async function berita() {
+	    // fetch data
+      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
+	    let data = await response.json();
+	    console.log(data.judul);
 
-$(document).ready(function (){
-  $('#bimz').DataTable({
-    processing: true,
-    "ajax": {
-      "url": web_strapi + "/dosens",
-      dataSrc:"",
-      cache: true
-    },
-    "columns": [
-      { "data": "NIP" },
-      { "data": "nama" },
-      { "data": "foto.formats.thumbnail.url",
-        render: function (data, type, row, meta) {
-          return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
-        }
-      },
-      { "data": "id",
-        render: function (data, type, row, meta) {
-          return '<div class="text-center"><a href=dosen_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
-        }
-      }
-    ]
-  });
-});
-
-</script>
+      // set data
+      document.getElementById("judul_utama").innerHTML = data.judul;
+      document.getElementById("slug_berita").innerHTML = data.slug;
+	}
+</script> -->

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mahasiswa Berprestasi | Politeknik Negeri Bandung</title>
+  <title>Arsip Kerjasama | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,34 +56,34 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link active" href="arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
           <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -98,7 +98,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspPrestasi</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Kerja<span>&nbsp Sama</span></h1>
     </div>
   </section><!-- End Hero -->
  
@@ -115,78 +115,80 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="mu-latest-course-single">
-                          <h2><a href="#">Mahasiswa Berprestasi</a></h2>
+                          <h2><a href="#">Arsip Kerjasama</a></h2>
                           <hr align="left">
-
-                          <!-- ======= Prestasi Section ======= -->
+                          <!-- ======= Arsip Section ======= -->
                           <section id="about" class="about" style="padding-top: 1%;">
                             <div class="container" data-aos="fade-up">
-                          
+                              
+                              <div class="row" style="margin-left: -5%;">
+                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                  <img id="kerjasama1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                </div>
+                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="section-title">
+                                        <h4 id="kerjasama1_judul"></h4>
+                                      <h5>Kerja Sama</h5>
+                                      <h5 class="author"><span id="kerjasama1_author"></span> | <span id="kerjasama1_published"></span></h5>
+                                      <a href="#" id="kerjasama1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <br>
+
+                              <div class="row" style="margin-left: -5%;">
+                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                  <img id="kerjasama2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                </div>
+                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="section-title">
+                                        <h4 id="kerjasama2_judul"></h4>
+                                      <h5>Kerja Sama</h5>
+                                      <h5 class="author"><span id="kerjasama2_author"></span> | <span id="kerjasama2_published"></span></h5>
+                                      <a href="#" id="kerjasama2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                    </div>
+                                </div>
+                              </div>
+                              
+                                <br>
+
                                 <div class="row" style="margin-left: -5%;">
                                   <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="mapres1_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
+                                    <img id="kerjasama3_img" src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
                                   </div>
                                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                                       <div class="section-title">
-                                          <h4 id="mapres1_judul"></h4>
-                                        <h5>Prestasi</h5>
-                                        <h5 class="author"><span id="mapres1_author"></span> | <span id="mapres1_published"></span></h5>
-                                        <a href="#" id="mapres1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>   
-                                    </div>
+                                          <h4 id="kerjasama3_judul"></h4>
+                                        <h5>Kerja Sama</h5>
+                                        <h5 class="author"><span id="kerjasama3_author"></span> | <span id="kerjasama3_published"></span></h5>
+                                        <a href="#" id="kerjasama3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>
+                                  </div>
                                 </div>
                         
                                 <br>
-                      
+
                                 <div class="row" style="margin-left: -5%;">
                                   <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="mapres2_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
+                                    <img id="kerjasama4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
                                   </div>
                                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                                       <div class="section-title">
-                                          <h4 id="mapres2_judul"></h4>
-                                        <h5>Prestasi</h5>
-                                        <h5 class="author"><span id="mapres2_author"></span> | <span id="mapres2_published"></span></h5>
-                                        <a href="#" id="mapres2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>   
-                                    </div>
-                                </div>
-                        
-                                <br>
-                      
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="mapres3_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
+                                          <h4 id="kerjasama4_judul"></h4>
+                                        <h5>Kerja Sama</h5>
+                                        <h5 class="author"><span id="kerjasama4_author"></span> | <span id="kerjasama4_published"></span></h5>
+                                        <a href="#" id="kerjasama4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>
                                   </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="mapres3_judul"></h4>
-                                        <h5>Prestasi</h5>
-                                        <h5 class="author"><span id="mapres3_author"></span> | <span id="mapres3_published"></span></h5>
-                                        <a href="#" id="mapres3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>   
-                                    </div>
                                 </div>
                         
                                 <br>
-                      
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="mapres4_img" src="../assets/img/daftarprestasi/maprespolban.jpg" class="img-fluid" alt="" width="100%">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="mapres4_judul"></h4>
-                                        <h5>Prestasi</h5>
-                                        <h5 class="author"><span id="mapres4_author"></span> | <span id="mapres4_published"></span></h5>
-                                        <a href="#" id="mapres4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>   
-                                    </div>
-                                </div>
-                        
-                                <br>
+
+                              
+
                             </div>
-                          </section><!-- End Prestasi Section -->
+                          </section><!-- End Arsip Section -->
 
                         </div> 
                       </div>                                   
@@ -203,9 +205,9 @@
                       <h3>Kerjasama</h3>
                       <hr align="left">
                       <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a style="border-left: 6px solid #105194;" href="mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                        <li><a href="penghargaan.html">Penghargaan</a></li>
-                        <li><a href="program-kreativitas-mahasiswa.html">Program Kreativitas Mahasiswa</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
+                        <li><a href="form-kemitraan.php">Form Kemitraan</a></li>
+                        <li><a href="daftar-kemitraan.php">Daftar Kemitraan JTK Polban</a></li>
                       </ul>
                     </div>
                     <hr class="mu-single-hr">
@@ -300,7 +302,6 @@
 </body>
 
 </html>
-
 <script type="text/javascript">
   // Global Var
   var web_strapi = "https://portaljtk.herokuapp.com";
@@ -315,18 +316,18 @@
   }
 	async function arsip_kerjasama() {
 	    // fetch data
-      let response = await fetch(web_strapi + '/prestasis/indexmapres');
+      let response = await fetch(web_strapi + '/arsipkerjasamas/index');
 	    let data = await response.json();
        var i = 1;
 
       // set data
       for (i; i <= 4; i++) {
         console.log(data);
-        document.getElementById("mapres"+ i +"_judul").innerHTML = data[i-1].judul;
-        document.getElementById("mapres"+ i +"_author").innerHTML = data[i-1].Author;
-        document.getElementById("mapres"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
-        document.getElementById("mapres"+ i +"_href").href = "prestasi-detail.php?id=" + data[i-1].slug;
-        document.getElementById("mapres"+ i +"_img").src = web_strapi + data[i-1].attachment.url;
+        document.getElementById("kerjasama"+ i +"_judul").innerHTML = data[i-1].judul;
+        document.getElementById("kerjasama"+ i +"_author").innerHTML = data[i-1].author;
+        document.getElementById("kerjasama"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
+        document.getElementById("kerjasama"+ i +"_href").href = "kerjasama-detail.php?id=" + data[i-1].slug;
+        document.getElementById("kerjasama"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;
         
        }
 	}

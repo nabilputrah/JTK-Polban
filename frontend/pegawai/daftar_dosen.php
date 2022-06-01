@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Study Tracer D4 | Politeknik Negeri Bandung</title>
+  <title>Dosen | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,6 +22,7 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -55,34 +56,34 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link active" href="d3.html">Lulusan</a></li>
-          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -97,7 +98,7 @@
   <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Lulusan<span>-D4</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspDosen</span></h1>
     </div>
   </section><!-- End Slider -->
 
@@ -108,37 +109,62 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Lulusan D4 - Tracer Study</h2>
+          <h2>Daftar Dosen</h2>
           <ol>
-            <li><a href="index.html">Beranda</a></li>
-            <li>Lulusan D4</li>
+            <li><a href="index.php">Beranda</a></li>
+            <li>Dosen</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-        <div class="section-title">
-          <a href="d3.html"><h2>D3 Teknik Informatika</h2></a>
-          <h2 style="color: orange;">D4 Teknik Informatika</h2>
-        </div>
-        <p>
-          <h3>Grafik Tingkat Kelulusan</h3>
-          <h7>Tingkat Kelulusan dari D4 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2018.</h7>
-          <div class="d-flex justify-content-between align-items-center">
-            <div id="plotLulus" class="align-items-center" style="width:100%;max-width:700px"></div>
+  <!-- ======= List Section ======= -->
+  <section id="mu-course-content">
+    <div class="container" data-aos="fade-up">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-12">
+          <div class="mu-course-content-area">
+            <div class="row">
+              <div class="section-title">
+                <h2 style="color: orange;">Dosen</h2>
+                <a href="daftar_pegawai.php"><h2>Lainnya</h2></a>
+              </div>
+              <!-- start course content container -->
+              <div class="mu-course-container mu-course-details">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mu-latest-course-single">
+                      <h2><a href="#">Daftar Pengajar (Dosen)</a></h2>
+                      <hr align="left">
+                      <div class="mu-latest-course-single-content" style="background-color: white;">
+                        <div class="row" style="font-size: 13px; display: block; margin: 0 auto;">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive">
+                                  <thead>
+                                      <tr>
+                                        <th class="text-center" style="width: 10px;">NIP</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Foto</th>
+                                        <th class="text-center">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  </tbody>
+                              </table>
+                        </div>                      
+                      </div>
+                    </div> 
+                  </div>                                   
+                </div>
+              </div>
+              <!-- end course content container -->
+            </div>
           </div>
-          <hr>
-          <h3>Grafik Tracer Study</h3>
-          <h7>Tracer Study dari D4 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2018.</h7>
-          <div class="d-flex justify-content-between align-items-center">
-            <div id="plotTracer" class="align-items-center" style="width:100%;max-width:700px"></div>
-          </div>
-        </p>
+        </div>  
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- End List Section -->
 
   </main><!-- End #main -->
 
@@ -213,9 +239,8 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Plot -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -224,55 +249,38 @@
 
 </html>
 
+<style type="text/css">
+  .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+</style>
+
 <script>
-  var web_strapi = "http://localhost:1337";
+var web_strapi = "https://portaljtk.herokuapp.com";
 
-  window.onload = callFunc();
-
-  function callFunc(){
-    plotLulus();
-    plotTracer();
-  }
-
-  async function plotLulus(){
-    // fetch data
-    let response = await fetch(web_strapi + '/tracerstudies/628f540c2cde253364591da0');
-    let result = await response.json();
-
-    var xArray = ["Lulus Tepat Waktu", "Lulus Tidak Tepat Waktu", "Tidak Lulus"];
-    var yArray = [parseInt(result.lulus), parseInt(result.lulus_tidaktepat), parseInt(result.tidak_lulus)];
-
-    var data = [{
-      x:xArray,
-      y:yArray,
-      type:"bar",
-      marker: {
-        color: 'red'
+$(document).ready(function (){
+  $('#bimz').DataTable({
+    processing: true,
+    "ajax": {
+      "url": web_strapi + "/dosens",
+      dataSrc:"",
+      cache: true
+    },
+    "columns": [
+      { "data": "NIP" },
+      { "data": "nama" },
+      { "data": "foto.formats.thumbnail.url",
+        render: function (data, type, row, meta) {
+          return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
+        }
+      },
+      { "data": "id",
+        render: function (data, type, row, meta) {
+          return '<div class="text-center"><a href=dosen_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
+        }
       }
-    }];
+    ]
+  });
+});
 
-    var layout = {};
-
-    Plotly.newPlot("plotLulus", data, layout);
-  }
-
-  async function plotTracer(){
-    // fetch data
-    let response = await fetch(web_strapi + '/tracerstudies/628f540c2cde253364591da0');
-    let result = await response.json();
-
-    var xArray = ["Bekerja", "Melanjutkan Study", "Wirausaha", "Tidak Bekerja", "Belum Diketahui"];
-    var yArray = [parseInt(result.bekerja), parseInt(result.melanjutkan_study), parseInt(result.wirausaha), parseInt(result.tidak_bekerja), parseInt(result.belum_diketahui)];
-
-    var data = [{
-      x:xArray,
-      y:yArray,
-      type:"bar"
-    }];
-
-    var layout = {};
-
-    Plotly.newPlot("plotTracer", data, layout);
-  }
-  
 </script>

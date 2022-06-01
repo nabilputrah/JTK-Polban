@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Study Tracer D3 | Politeknik Negeri Bandung</title>
+  <title>Event | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -55,34 +56,34 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link " href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
+          <li class="dropdown"><a href="#" class="nav-link active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -94,46 +95,158 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Slider Section ======= -->
-  <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Lulusan<span>-D3</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Halaman<span>&nbsp Event</span></h1>
     </div>
-  </section><!-- End Slider -->
-
-  <main id="main" data-aos="fade-up">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Lulusan D3 - Tracer Study</h2>
-          <ol>
-            <li><a href="index.html">Beranda</a></li>
-            <li>Lulusan D3</li>
-          </ol>
+  </section><!-- End Hero -->
+  <section id="portfolio" class="portfolio" style="background-color: #CFE4F9;">
+    <div class="container" data-aos="fade-up">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter=".filter-jan">JAN</li>
+            <li data-filter=".filter-feb">FEB</li>
+            <li data-filter=".filter-mar">MAR</li>
+            <li data-filter=".filter-apr">APR</li>
+            <li data-filter=".filter-mei" class="filter-active">MEI</li>
+            <li data-filter=".filter-jun">JUN</li>
+            <li data-filter=".filter-jul">JUL</li>
+            <li data-filter=".filter-agu">AGU</li>
+            <li data-filter=".filter-sep">SEP</li>
+            <li data-filter=".filter-okt">OKT</li>
+            <li data-filter=".filter-nov">NOV</li>
+            <li data-filter=".filter-des">DES</li>
+          </ul>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </div>
+  </section>  
+  <!-- ======= Profil Section ======= -->
+  <section id="mu-course-content">
+    <div class="container" data-aos="fade-up">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-12">
+          <div class="mu-course-content-area">
+            <div class="row">
+                <div class="col-md-9">
+                  <!-- start course content container -->
+                  <div class="mu-course-container mu-course-details">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="mu-latest-course-single">
+                          <h2><a href="#">Event Terbaru</a></h2>
+                          <hr align="left">
+                          <!-- ======= Arsip Section ======= -->
+                          <section id="about" class="about" style="padding-top: 1%;">
+                            <div class="container" data-aos="fade-up">
+                              
+                              <div class="row" style="margin-left: -5%;">
+                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                  <img id="event1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                </div>
+                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="section-title">
+                                        <h4 id="event1_judul"></h4>
+                                      <h5>Event</h5>
+                                      <h5 class="author"> Manajemen JTK | <span id="event1_published"></span></h5>
+                                      <a href="#" id="event1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                    </div>
+                                </div>
+                              </div>
 
-    <section class="inner-page">
-      <div class="container">
-        <div class="section-title">
-          <h2 style="color: orange;">D3 Teknik Informatika</h2>
-          <h2>D4 Teknik Informatika</h2>
-        </div>
-        <p>
-          
-        </p>
+                              <br>
+
+                              <div class="row" style="margin-left: -5%;">
+                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                  <img id="event2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                </div>
+                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="section-title">
+                                        <h4 id="event2_judul"></h4>
+                                      <h5>Event</h5>
+                                      <h5 class="author"> Manajemen JTK | <span id="event2_published"></span></h5>
+                                      <a href="#" id="event2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                    </div>
+                                </div>
+                              </div>
+                              
+                                <br>
+
+                                <div class="row" style="margin-left: -5%;">
+                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                    <img id="event3_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                  </div>
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                      <div class="section-title">
+                                          <h4 id="event3_judul"></h4>
+                                        <h5>Event</h5>
+                                        <h5 class="author"> Manajemen JTK | <span id="event3_published"></span></h5>
+                                        <a href="#" id="event3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row" style="margin-left: -5%;">
+                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                                    <img id="event4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                  </div>
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                      <div class="section-title">
+                                          <h4 id="event4_judul"></h4>
+                                        <h5>Event</h5>
+                                        <h5 class="author"> Manajemen JTK | <span id="event4_published"></span></h5>
+                                        <a href="#" id="event4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                      </div>
+                                  </div>
+                                </div>
+                        
+                                <br>
+
+                              
+
+                            </div>
+                          </section><!-- End Arsip Section -->
+
+                        </div> 
+                      </div>                                   
+                    </div>
+                  </div>
+                  <!-- end course content container -->
+                </div>
+
+                <div class="col-md-3">
+                  <!-- start sidebar -->
+                  <aside class="mu-sidebar">
+                    <!-- start single sidebar -->
+                    <div class="mu-single-sidebar">
+                      <h3>Daftar Event </h3>
+                      <hr align="left">
+                      <ul class="mu-sidebar-catg" style="list-style: none;">
+                        <li><a style="border-left: 6px solid #105194;" href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
+                        <li><a href="form-kemitraan.php">Form Kemitraan</a></li>
+                        <li><a href="daftar-kemitraan.php">Daftar Kemitraan JTK Polban</a></li>
+                      </ul>
+                    </div>
+                    <hr class="mu-single-hr">
+                    <!-- end single sidebar -->
+                  </aside>
+                  <!-- / end sidebar -->
+                </div>
+            </div>
+          </div>
+        </div>  
       </div>
-    </section>
-
-  </main><!-- End #main -->
+    </div>
+  </section>
+  <!-- End Profil Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+
     <div class="footer-top" style="background-color: #105194;">
       <div class="container">
         <div class="row">
@@ -210,3 +323,34 @@
 </body>
 
 </html>
+<script type="text/javascript">
+  // Global Var
+  var web_strapi = "https://portaljtk.herokuapp.com";
+
+  window.onload = callAllFunc();
+
+  function callAllFunc(){
+    event();
+  }
+  function formatMyDate(value, locale = 'en-GB') {
+    return new Date(value).toLocaleDateString(locale);
+  }
+	async function event() {
+	    // fetch data
+      let response = await fetch(web_strapi + '/event/index');
+	    let data = await response.json();
+       var i = 1;
+
+      // set data
+      for (i; i <= 4; i++) {
+        console.log(data);
+        document.getElementById("event"+ i +"_judul").innerHTML = data[i-1].judul_agenda;
+        document.getElementById("event"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
+        document.getElementById("event"+ i +"_href").href = "event_detail.php?id=" + data[i-1]._id;
+        document.getElementById("event"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;
+        
+       }
+	}
+
+
+</script>

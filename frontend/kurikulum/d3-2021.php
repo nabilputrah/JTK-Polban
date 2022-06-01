@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Form Kerjasama | Politeknik Negeri Bandung</title>
+  <title>Kurikulum D3 | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,52 +41,49 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        <!--- kosong -->
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <input class="form-control form-control-sm" type="text" placeholder="Search" >
+        <a href="#" class="facebook"><i class="bi bi-search"></i></a>
       </div>
     </div>
   </section>
 
- <!-- ======= Header ======= -->
- <header id="header" class="d-flex align-items-center">
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link active" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.html">Lulusan</a></li>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link active" href="d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
           <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -95,124 +92,77 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
+
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Slider Section ======= -->
-  <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Kerja <span>&nbspSama</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Kurikulum<span>-D3</span></h1>
     </div>
-  </section><!-- End Slider -->
- <!-- ======= Contact Section ======= -->
- <section id="contact" class="contact">
+  </section><!-- End Hero -->
+ 
+  <!-- ======= Profil Section ======= -->
+  <section id="mu-course-content">
     <div class="container" data-aos="fade-up">
-
-      <!-- <div class="section-title">
-        <h2>Contact</h2>
-        <h3><span>Contact Us</span></h3>
-        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-      </div> -->
-
-      
-
       <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="col-lg-9 ">
-            <div class="section-title-kerjasama">
-                <h3 style="text-align: left;" ><span><u>Form Ke</u>mitraan</span></h3>
-            </div>
-         <!-- ======= Clients Section ======= -->
-            <section id="clients" class="clients section-bg">
-                <div class="container" data-aos="zoom-in">
-        
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        
-                        <div class="row">
-                          <div class="col form-group">
-                            <div class="section-title-form">
-                                <h3>Nama Mitra</h3> 
-                            </div>
-                            <input type="text" name="nama_mitra" class="form-control" id="nama_mitra" placeholder="Masukkan Nama Mitra" style="width: 450px;" required>
+        <div class="col-md-12">
+          <div class="mu-course-content-area">
+            <div class="row">
+              <div class="section-title">
+                <h2 style="color: orange;">D3 Teknik Informatika</h2>
+                <a href="d4-2016.php"><h2>D4 Teknik Informatika</h2></a>
+              </div>
+                <div class="col-md-9">
+                  <!-- start course content container -->
+                  <div class="mu-course-container mu-course-details">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="mu-latest-course-single">
+                          <h2><a href="#">Kurikulum D3 2021</a></h2>
+                          <hr align="left">
+                          <div class="mu-latest-course-single-content">
+                            <h3>Profil Lulusan</h3>
+                            <ol>
+                              <li>Programmer : Mengkonversi spesifikasi dan problem statement beserta prosedur suatu proyek menjadi logical flow yang deteil sehingga siap dicoding dalam bahasa pemrograman.</li>
+                              <li>Software Application Tester : Memonitor dan mengendalikan perangkat komputer untuk keperluan pemrosesan data bisnis, saintifik, engineering, dan data lain sesuai dengan instruksi pengoperasiannya.</li>
+                              <li>Technical Writer : Mendokumentasikan algoritma dan/program secara eksplisit dan implisit berdasar standar dokumentasi pengembangan perangkat lunak.</li>
+                              <li>Desaigner Software Application : Merancang prosedur, tata cara pemeliharaan sistem perangkat lunak dan troubleshooting dengan memperhatikan prinsip security dan K3 (Kesehatan dan keselamatan Kerja).</li>
+                            </ol>
+                            <h3>Struktur Mata Kuliah Per Semester </h3>
                           </div>
-                        </div>
-                          
-                        <div class="row">
-                          <div class="col form-group">
-                            <div class="section-title-form">
-                                <h3>No Telp / WA</h3> 
-                            </div>
-                            <input type="text" class="form-control" name="no_telp" id="no_telp" placeholder="Masukkan No Telp / WA" style="width: 250px;" required>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col form-group">
-                            <div class="section-title-form">
-                                <h3>Email</h3> 
-                            </div>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Masukkan Email" style="width: 350px;" required>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col form-group">
-                              <div class="section-title-form">
-                                  <h3>Alamat</h3> 
-                              </div>
-                              <textarea class="form-control" name="alamat" rows="5" placeholder="Masukkan Alamat" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col form-group">
-                              <div class="section-title-form">
-                                  <h3>Pesan</h3> 
-                              </div>
-                              <textarea class="form-control" name="pesan" rows="5" placeholder="Masukkan Pesan" required></textarea>
-                            </div>
-                        </div>
-
-
-                        <div class="my-3">
-                          <div class="loading">Loading</div>
-                          <div class="error-message"></div>
-                          <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="row">
-                            <button type="submit" style="width:100px;margin-left:15px;">Kirim</button>
-                        </div>
-                    </form>
+                        </div> 
+                      </div>                                   
+                    </div>
+                  </div>
+                  <!-- end course content container -->
                 </div>
-            </section>
-      <!-- End Clients Section -->    
-    </div>
 
-        <div class="col-lg-3">
-            <div class="section-title-kerjasama">
-                <h3 style="text-align: left;" ><span><u>Kerja </u>Sama</span></h3>
+                <div class="col-md-3">
+                  <!-- start sidebar -->
+                  <aside class="mu-sidebar">
+                    <!-- start single sidebar -->
+                    <div class="mu-single-sidebar">
+                      <h3>Kurikulum</h3>
+                      <hr align="left">
+                      <ul class="mu-sidebar-catg" style="list-style: none;">
+                        <li><a href="d3-2016.php">Kurikulum 2016</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="">Kurikulum 2021</a></li>
+                      </ul>
+                    </div>
+                    <hr class="mu-single-hr">
+                    <!-- end single sidebar -->
+                  </aside>
+                  <!-- / end sidebar -->
+                </div>
             </div>
-            
-                <ul class="a">
-                    <li><a href="arsip-kerja-sama.html">Arsip Kerja Sama</a></li>
-                    <hr>
-                    <li><a href="form-kemitraan.html"><b style="color:blue;">|</b>Form Kemitraan</a></li>
-                    <hr>
-                    <li><a href="daftar-kemitraan.html">Daftar Kemitraan JTK Polban</a></li>
-                    <hr>
-                </ul>
-
-          
-        </div>
-
+          </div>
+        </div>  
       </div>
-
     </div>
   </section>
-  <!-- End Contact Section -->
-
-
-
+  <!-- End Profil Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">

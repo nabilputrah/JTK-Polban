@@ -55,34 +55,34 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <div class="container d-flex align-items-center">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
-        <h1 class="logo" style="margin-left: 15px;"><a href="../index.html">Portal JTK<span>.</span></a></h1>
+        <a href="../index.php" class="logo"><img src="../assets/img/logo_polban.png" alt=""></a>
+        <h1 class="logo" style="margin-left: 15px;"><a href="../index.php">Portal JTK<span>.</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.html">Tentang JTK</a></li>
-          <li><a class="nav-link" href="../kurikulum/d3-2016.html">Akademik</a></li>
-          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.html">Mitra</a></li>
-          <li><a class="nav-link active" href="d3.html">Lulusan</a></li>
-          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link" href="../index.php">Beranda</a></li>
+          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../berita/berita_home.html">Berita</a></li>
-              <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
-              <li><a href="../galeri/galeri.html">Galeri</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
+              <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
+              <li><a href="galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.html">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.html">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.html">Pekan Kreativitas Mahasiswa</a></li>
+                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
+                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Pekan Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.html">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.html">Lainnya</a></li>
+                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
+                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -110,7 +110,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Lulusan D3 - Tracer Study</h2>
           <ol>
-            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.php">Beranda</a></li>
             <li>Lulusan D3</li>
           </ol>
         </div>
@@ -122,20 +122,10 @@
       <div class="container">
         <div class="section-title">
           <h2 style="color: orange;">D3 Teknik Informatika</h2>
-          <a href="d4.html"><h2>D4 Teknik Informatika</h2></a>
+          <h2>D4 Teknik Informatika</h2>
         </div>
         <p>
-          <h3>Grafik Tingkat Kelulusan</h3>
-          <h7>Tingkat Kelulusan dari D3 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2019.</h7>
-          <div class="d-flex justify-content-between align-items-center">
-            <div id="plotLulus" class="align-items-center" style="width:100%;max-width:700px"></div>
-          </div>
-          <hr>
-          <h3>Grafik Tracer Study</h3>
-          <h7>Tracer Study dari D3 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2019.</h7>
-          <div class="d-flex justify-content-between align-items-center">
-            <div id="plotTracer" class="align-items-center" style="width:100%;max-width:700px"></div>
-          </div>
+          
         </p>
       </div>
     </section>
@@ -214,65 +204,9 @@
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Plot -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
 </body>
 
 </html>
-
-<script>
-  var web_strapi = "http://localhost:1337";
-
-  window.onload = callFunc();
-
-  function callFunc(){
-    plotLulus();
-    plotTracer();
-  }
-
-  async function plotLulus(){
-    // fetch data
-    let response = await fetch(web_strapi + '/tracerstudies/628f46bb09a9cf11c0ac6bfe');
-    let result = await response.json();
-
-    var xArray = ["Lulus Tepat Waktu", "Lulus Tidak Tepat Waktu", "Tidak Lulus"];
-    var yArray = [parseInt(result.lulus), parseInt(result.lulus_tidaktepat), parseInt(result.tidak_lulus)];
-
-    var data = [{
-      x:xArray,
-      y:yArray,
-      type:"bar",
-      marker: {
-        color: 'red'
-      }
-    }];
-
-    var layout = {};
-
-    Plotly.newPlot("plotLulus", data, layout);
-  }
-
-  async function plotTracer(){
-    // fetch data
-    let response = await fetch(web_strapi + '/tracerstudies/628f46bb09a9cf11c0ac6bfe');
-    let result = await response.json();
-
-    var xArray = ["Bekerja", "Melanjutkan Study", "Wirausaha", "Tidak Bekerja", "Belum Diketahui"];
-    var yArray = [parseInt(result.bekerja), parseInt(result.melanjutkan_study), parseInt(result.wirausaha), parseInt(result.tidak_bekerja), parseInt(result.belum_diketahui)];
-
-    var data = [{
-      x:xArray,
-      y:yArray,
-      type:"bar"
-    }];
-
-    var layout = {};
-
-    Plotly.newPlot("plotTracer", data, layout);
-  }
-  
-</script>
