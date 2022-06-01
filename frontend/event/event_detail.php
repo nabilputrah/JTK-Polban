@@ -70,7 +70,7 @@
             <ul>
               <li><a href="../berita/berita_home.html">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.html">Fasilitas</a></li>
-              <li><a href="../event/event_home.html">Event</a></li>
+              <li><a href="event_home.html">Event</a></li>
               <li><a href="../galeri/galeri.html">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
