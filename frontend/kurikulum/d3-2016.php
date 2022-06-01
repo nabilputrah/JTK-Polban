@@ -23,6 +23,8 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -123,13 +125,24 @@
                           <hr align="left">
                           <div class="mu-latest-course-single-content">
                             <h3>Profil Lulusan</h3>
-                            <ol>
-                              <li>Programmer : Mengkonversi spesifikasi dan problem statement beserta prosedur suatu proyek menjadi logical flow yang deteil sehingga siap dicoding dalam bahasa pemrograman.</li>
-                              <li>Software Application Tester : Memonitor dan mengendalikan perangkat komputer untuk keperluan pemrosesan data bisnis, saintifik, engineering, dan data lain sesuai dengan instruksi pengoperasiannya.</li>
-                              <li>Technical Writer : Mendokumentasikan algoritma dan/program secara eksplisit dan implisit berdasar standar dokumentasi pengembangan perangkat lunak.</li>
-                              <li>Desaigner Software Application : Merancang prosedur, tata cara pemeliharaan sistem perangkat lunak dan troubleshooting dengan memperhatikan prinsip security dan K3 (Kesehatan dan keselamatan Kerja).</li>
-                            </ol>
+                            <p id="profil_lulusan" style="text-indent: 0px; text-align: justify">
+                              profil lulusan
+                            </p>
                             <h3>Struktur Mata Kuliah Per Semester </h3>
+                            <div class="row" style="font-size: 13px; display: block; margin: 0 auto;background-color: #FFF;">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive">
+                                  <thead>
+                                      <tr>
+                                        <th class="text-center" style="width: 10px;">NIP</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Foto</th>
+                                        <th class="text-center">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  </tbody>
+                              </table>
+                            </div>                      
                           </div>
                         </div> 
                       </div>                                   
@@ -235,6 +248,9 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -243,17 +259,63 @@
 
 </html>
 
-<!-- <script type="text/javascript">
-  berita();
+<style type="text/css">
+  .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+</style>
 
-	async function berita() {
-	    // fetch data
-      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
-	    let data = await response.json();
-	    console.log(data.judul);
+<script>
+  var web_strapi = "https://portaljtk.herokuapp.com";
+  var id = "62971533d4d62d0898c78fb2";
 
+  window.onload = callAllFunc();
+
+  function callAllFunc(){
+    kurikulum();
+  }
+
+  function formatMyDate(value, locale = 'en-GB') {
+    return new Date(value).toLocaleDateString(locale);
+  }
+
+  async function kurikulum() {
+      // fetch data
+      let response = await fetch(web_strapi + '/kurikulums/' + id);
+      let data = await response.json();
+      console.log(data);
       // set data
-      document.getElementById("judul_utama").innerHTML = data.judul;
-      document.getElementById("slug_berita").innerHTML = data.slug;
-	}
-</script> -->
+      const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
+      
+      let deskripsi = JSON.stringify(data.profil_lulusan);
+      let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
+      let result = deskripsi_replace.replace(/\“|\"/gi,'');
+      document.getElementById("profil_lulusan").innerHTML = result ;    
+  }
+
+  $(document).ready(function (){
+    $('#bimz').DataTable({
+      processing: true,
+      "ajax": {
+        "url": web_strapi + "/dosens",
+        dataSrc:"",
+        cache: true
+      },
+      "columns": [
+        { "data": "NIP" },
+        { "data": "nama" },
+        { "data": "foto.formats.thumbnail.url",
+          render: function (data, type, row, meta) {
+            return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
+          }
+        },
+        { "data": "id",
+          render: function (data, type, row, meta) {
+            return '<div class="text-center"><a href=dosen_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
+          }
+        }
+      ]
+    });
+  });
+
+</script>
