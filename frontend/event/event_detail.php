@@ -255,12 +255,15 @@
       // fetch data
       let response = await fetch(web_strapi + '/events/' + id);
       let data = await response.json();
-
+      const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
       // set data
       document.getElementById("berita_judul").innerHTML = data.judul_agenda;
       document.getElementById("bc_title").innerHTML = data.judul_agenda;
       document.getElementById("author").innerHTML = "Author : Manajemen JTK";
-      document.getElementById("berita_text").innerHTML = data.keterangan;
+      let deskripsi = JSON.stringify(data.keterangan);
+      let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
+      let result = deskripsi_replace.replace(/\“|\"/gi,'');
+      document.getElementById("berita_text").innerHTML = result;
       document.getElementById("berita_img").src = web_strapi + data.attachment[0].url;
       document.getElementById("published").innerHTML = "Published : " + formatMyDate(data.published_at);
   }

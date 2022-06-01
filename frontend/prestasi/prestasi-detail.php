@@ -255,15 +255,18 @@
       // fetch data
       let response = await fetch(web_strapi + '/prestasis/' + id);
       let data = await response.json();
-    
+      const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
       // set data
       console.log(data);
       document.getElementById("prestasi_judul").innerHTML = data.judul;
       document.getElementById("ps_title").innerHTML = data.judul;
       document.getElementById("author").innerHTML = "Author : " + data.Author;
       document.getElementById("prestasi_img").src = web_strapi + data.attachment.url;
-      console.log(data.attachment.url);
-      document.getElementById("prestasi_text").innerHTML = data.deskripsi;    
+
+      let deskripsi = JSON.stringify(data.deskripsi);
+      let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
+      let result = deskripsi_replace.replace(/\“|\"/gi,'');
+      document.getElementById("prestasi_text").innerHTML = result ;    
       document.getElementById("published").innerHTML = "Published : " + formatMyDate(data.published_at);
   }
 

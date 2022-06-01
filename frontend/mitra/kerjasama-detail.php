@@ -268,7 +268,9 @@
       document.getElementById("author").innerHTML = "Author : " + data.author;
       document.getElementById("kerjasama_img").src = web_strapi + data.attachment[0].url;
       let deskripsi = JSON.stringify(data.deskripsi);
-      document.getElementById("kerjasama_text").innerHTML = deskripsi.replace(regex, '<br>') ;    
+      let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
+      let result = deskripsi_replace.replace(/\“|\"/gi,'');
+      document.getElementById("kerjasama_text").innerHTML = result ;    
       document.getElementById("published").innerHTML = "Published : " + formatMyDate(data.published_at);
   }
 
