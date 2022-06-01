@@ -160,7 +160,6 @@
                         <li><a href="profil-jurusan.php">Profil Jurusan</a></li>
                         <li><a href="profil-d3.php">Profil Program Studi D3</a></li>
                         <li><a style="border-left: 6px solid #105194;" href="profil-d4.php">Profil Program Studi D4</a></li>
-                        <li><a href="">Profil Pegawai</a></li>
                       </ul>
                     </div>
                     <hr class="mu-single-hr">
