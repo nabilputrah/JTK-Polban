@@ -335,12 +335,17 @@
       document.getElementById("dosen_lahir").innerHTML = data.tempat_tanggal_lahir;
       document.getElementById("dosen_kontak").innerHTML = data.kontak;
       document.getElementById("dosen_jk").innerHTML = data.jk;
-      // document.getElementById("dosen_karya").innerHTML = data.karya_ilmiah;
+      //karya ilmiah
       let karya = JSON.stringify(data.karya_ilmiah);
-      document.getElementById("dosen_karya").innerHTML = karya.replace(regex, '<br>');
+      let karya_replace = karya.replace(regex, '<br>'); 
+      let hasil = karya_replace.replace(/\“|\"/gi,'');
+      document.getElementById("dosen_karya").innerHTML = hasil;
 
-      let deskripsi = JSON.stringify(data.pengalaman);
-      document.getElementById("dosen_pengalaman").innerHTML = deskripsi.replace(regex, '<br>');
+      //pengalaman
+      let pengalaman = JSON.stringify(data.pengalaman);
+      let pengalaman_replace = pengalaman.replace(regex, '<br>'); 
+      let result = pengalaman_replace.replace(/\“|\"/gi,'');
+      document.getElementById("dosen_pengalaman").innerHTML = result;
 
       document.getElementById("dosen_matkul").innerHTML = data.matkul;
       document.getElementById("dosen_kbk").innerHTML = data.KBK;
