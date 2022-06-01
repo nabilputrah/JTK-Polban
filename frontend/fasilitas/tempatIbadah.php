@@ -135,77 +135,79 @@
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img src="../assets/img/facility/gedung1.jpg" class="img-fluid" alt="">
+        <img id="sarana1_img" src="../assets/img/facility/gedung1.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Gedung</h4>
-          <p >Gedung</p>
+          <h4 id="sarana1_nama">Sarana Gedung</h4>
+          <p id="sarana1_detail">Gedung</p>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img src="../assets/img/facility/sarana-kelas-2-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana2_img" src="../assets/img/facility/sarana-kelas-2-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Kelas</h4>
-          <p >Kelas 2</p>
+          <h4 id="sarana2_nama">Sarana Kelas</h4>
+          <p id="sarana2_detail">Kelas 2</p>
 
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="kegiatan2_img" src="../assets/img/facility/sarana-kelas-1-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana3_img" src="../assets/img/facility/sarana-kelas-1-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Kelas</h4>
-          <p>Kelas 1</p>
+          <h4 id="sarana3_nama">Sarana Kelas</h4>
+          <p id="sarana3_detail">Kelas 1</p>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="news2_img" src="../assets/img/facility/sarana-lapangan-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana4_img" src="../assets/img/facility/sarana-lapangan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Lapangan</h4>
-          <p>Lapangan</p>
+          <h4 id="sarana4_nama">Sarana Lapangan</h4>
+          <p id="sarana4_detail">Lapangan</p>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="lainnya2_img" src="../assets/img/facility/sarana-mading-mahasiswa-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana5_img" src="../assets/img/facility/sarana-mading-mahasiswa-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Mading</h4>
-          <p>Mading</p>
+          <h4 id="sarana5_nama">Sarana Mading</h4>
+          <p id="sarana5_detail">Mading</p>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="kegiatan3_img" src="../assets/img/facility/sarana-papan-jurusan-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana6_img" src="../assets/img/facility/sarana-papan-jurusan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Jurusan</h4>
-          <p>Papan Jurusan</p>
+          <h4 id="sarana6_nama">Sarana Jurusan</h4>
+          <p id="sarana6_detail">Papan Jurusan</p>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="news1_img" src="../assets/img/facility/sarana-rsg-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana7_img" src="../assets/img/facility/sarana-rsg-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Gedung</h4>
-          <p>Ruang Serba Guna</p>
+          <h4 id="sarana7_nama">Sarana Gedung</h4>
+          <p id="sarana7_detail">Ruang Serba Guna</p>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="news3_img" src="../assets/img/facility/sarana-taman-depan-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana8_img" src="../assets/img/facility/sarana-taman-depan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Taman</h4>
-          <p>Taman Depan</p>
+          <h4 id="sarana8_nama">Sarana Taman</h4>
+          <p id="sarana8_detail">Taman Depan</p>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 portfolio-item">
-        <img id="lainnya3_img" src="../assets/img/facility/sarana-visi-misi-jurusan-1024x576.jpg" class="img-fluid" alt="">
+        <img id="sarana9_img" src="../assets/img/facility/sarana-taman-depan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4>Sarana Jurusan</h4>
-          <p>Visi Misi</p>
+          <h4 id="sarana9_nama">Sarana Taman</h4>
+          <p id="sarana9_detail">Taman Depan</p>
         </div>
       </div>
+
+
 
     </div>
 
@@ -310,4 +312,28 @@
       document.getElementById("judul_utama").innerHTML = data.judul;
       document.getElementById("slug_berita").innerHTML = data.slug;
 	}
-</script> -->   
+</script> -->
+<script type="text/javascript">
+  // Global Var
+  var web_strapi = "http://localhost:1337";
+
+  window.onload = callAllFunc();
+
+  function callAllFunc(){
+    berita();
+  }
+
+	async function berita() {
+	    // fetch data
+      let response = await fetch(web_strapi + '/saranas/');
+	    let data = await response.json();
+      var i = 1;
+
+      // set data
+      for (i; i <= 3; i++) {
+        console.log(data);
+        document.getElementById("sarana"+ i +"_nama").innerHTML = data[i-1].nama_sarana;
+        document.getElementById("sarana"+ i +"_detail").innerHTML = data[i-1].detail;
+        document.getElementById("sarana"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;      }
+	}
+</script>

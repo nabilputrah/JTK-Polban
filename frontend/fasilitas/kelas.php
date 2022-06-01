@@ -135,76 +135,79 @@
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img id="kegiatan1_img" src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+        <img id="sarana1_img" src="../assets/img/facility/gedung1.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="kegiatan1_title"></h4>
-          <p id="kegiatan1_desc"></p>
+          <h4 id="sarana1_nama">Sarana Gedung</h4>
+          <p id="sarana1_detail">Gedung</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img id="lainnya1_img" src="../assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana2_img" src="../assets/img/facility/sarana-kelas-2-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="lainnya1_title"></h4>
-          <p id="lainnya1_desc"></p>
+          <h4 id="sarana2_nama">Sarana Kelas</h4>
+          <p id="sarana2_detail">Kelas 2</p>
+
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img id="kegiatan2_img" src="../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana3_img" src="../assets/img/facility/sarana-kelas-1-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="kegiatan2_title"></h4>
-          <p id="kegiatan2_desc"></p>
+          <h4 id="sarana3_nama">Sarana Kelas</h4>
+          <p id="sarana3_detail">Kelas 1</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <img id="news2_img" src="../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana4_img" src="../assets/img/facility/sarana-lapangan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="news2_title"></h4>
-          <p id="news2_desc"></p>
+          <h4 id="sarana4_nama">Sarana Lapangan</h4>
+          <p id="sarana4_detail">Lapangan</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img id="lainnya2_img" src="../assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana5_img" src="../assets/img/facility/sarana-mading-mahasiswa-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="lainnya2_title"></h4>
-          <p id="lainnya2_desc"></p>
+          <h4 id="sarana5_nama">Sarana Mading</h4>
+          <p id="sarana5_detail">Mading</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img id="kegiatan3_img" src="../assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana6_img" src="../assets/img/facility/sarana-papan-jurusan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="kegiatan3_title"></h4>
-          <p id="kegiatan3_desc"></p>
+          <h4 id="sarana6_nama">Sarana Jurusan</h4>
+          <p id="sarana6_detail">Papan Jurusan</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <img id="news1_img" src="../assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana7_img" src="../assets/img/facility/sarana-rsg-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="news1_title"></h4>
-          <p id="news1_desc"></p>
+          <h4 id="sarana7_nama">Sarana Gedung</h4>
+          <p id="sarana7_detail">Ruang Serba Guna</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <img id="news3_img" src="../assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana8_img" src="../assets/img/facility/sarana-taman-depan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="news3_title"></h4>
-          <p id="news3_desc"></p>
+          <h4 id="sarana8_nama">Sarana Taman</h4>
+          <p id="sarana8_detail">Taman Depan</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img id="lainnya3_img" src="../assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <img id="sarana9_img" src="../assets/img/facility/sarana-taman-depan-1024x576.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
-          <h4 id="lainnya3_title"></h4>
-          <p id="lainnya3_desc"></p>
+          <h4 id="sarana9_nama">Sarana Taman</h4>
+          <p id="sarana9_detail">Taman Depan</p>
         </div>
       </div>
+
+
 
     </div>
 
@@ -310,3 +313,27 @@
       document.getElementById("slug_berita").innerHTML = data.slug;
 	}
 </script> -->
+<script type="text/javascript">
+  // Global Var
+  var web_strapi = "http://localhost:1337";
+
+  window.onload = callAllFunc();
+
+  function callAllFunc(){
+    berita();
+  }
+
+	async function berita() {
+	    // fetch data
+      let response = await fetch(web_strapi + '/saranas/');
+	    let data = await response.json();
+      var i = 1;
+
+      // set data
+      for (i; i <= 3; i++) {
+        console.log(data);
+        document.getElementById("sarana"+ i +"_nama").innerHTML = data[i-1].nama_sarana;
+        document.getElementById("sarana"+ i +"_detail").innerHTML = data[i-1].detail;
+        document.getElementById("sarana"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;      }
+	}
+</script>
